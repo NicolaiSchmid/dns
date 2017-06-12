@@ -1,0 +1,17 @@
+'':
+  - type: CNAME
+    value: nicolaischmid.de.
+  - type: MX
+    values:
+      - priority: 10
+        value: mx.zoho.com
+      - priority: 20
+        value: mx2.zoho.com
+      - priority: 50
+        value: mx3.zoho.com
+  - type: SPF
+    value: v=spf1 mx include:zoho.com -all
+
+default._domainkey:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjI8LuZZ61TbY2kIJds0r8iUzQEBCmOrAKAx4Pb6YuiVOwrGWV40qMpr+nrMkUFJVopyTa37bouISIVys9tzH3TUNY3hjyhFsPR/8vawbJHWuD82wMl36vwcL6U3zBsPYPMCvqPNwbrThaaBUTuEHXUJ6T0HQ5hQuMROp3/w7D9QIDAQAB

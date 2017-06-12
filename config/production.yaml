@@ -1,0 +1,22 @@
+providers:
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./config
+  cloudflare:
+    class: octodns.provider.cloudflare.CloudflareProvider
+    email: aaa662ec@opayq.com
+    token: env/CLOUDFLARE_TOKEN
+
+zones:
+#  schmid.uno.:
+#    sources:
+#      - config
+#    targets:
+#      - cloudflare
+  nicolais.ch.:
+    sources:
+      - config
+    targets:
+      - cloudflare
+
+  
