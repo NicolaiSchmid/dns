@@ -11,6 +11,7 @@
   - ttl: 1
     type: TXT
     value: google-site-verification=9kxIDge0DN4UCYfFyuMzt4imLnSKXp491NQvWEAtjgQ
+
 cloud:
   ttl: 1
   type: CNAME
