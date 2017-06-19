@@ -1,6 +1,6 @@
 ---
-? ''
-: - ttl: 1
+'':
+  - ttl: 1
     type: A
     value: 5.135.34.102
   - ttl: 1
@@ -12,10 +12,25 @@
     type: TXT
     value: google-site-verification=9kxIDge0DN4UCYfFyuMzt4imLnSKXp491NQvWEAtjgQ
 
+# Private projects
+api.poll:
+  ttl: 1
+  type: A
+  value: 5.135.34.102
+
+# Seafile Cloud
 cloud:
   ttl: 1
   type: CNAME
   value: cloud.nicolaischmid.de.
+
+# Openstack PoC
+console.wasc:
+  ttl: 1
+  type: A
+  value: 5.135.34.102
+
+  
 horizon.admin.openstack:
   ttl: 1
   type: A
@@ -44,22 +59,40 @@ pilot:
   ttl: 1
   type: A
   value: 5.135.34.103
+
+# Freelance domains
 plaasch:
   ttl: 1
   type: A
   values:
   - 151.101.1.195
   - 151.101.65.195
+
+# private projects
+poll:
+  ttl: 1
+  type: A
+  values:
+  - 151.101.1.195
+  - 151.101.65.195
+
+
 rechner:
   ttl: 1
   type: A
   values:
   - 151.101.1.195
   - 151.101.65.195
+
+
+
+# private servers
 vpn:
   ttl: 1
   type: A
   value: 46.105.160.139
+
+#wasc Cloud Platform
 wasc:
   ttl: 1
   type: A
