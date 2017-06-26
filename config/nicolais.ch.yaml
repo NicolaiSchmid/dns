@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 ? ''
 : - ttl: 1
+=======
+'':
+  - ttl: 1
+>>>>>>> 2a3f317d838570b20936b0fc12d155a8620dea48
     type: A
     value: 5.135.34.102
   - ttl: 1
@@ -11,10 +16,32 @@
   - ttl: 1
     type: TXT
     value: google-site-verification=9kxIDge0DN4UCYfFyuMzt4imLnSKXp491NQvWEAtjgQ
+<<<<<<< HEAD
+=======
+
+# Private projects
+api.poll:
+  ttl: 1
+  type: A
+  value: 5.135.34.102
+
+# Seafile Cloud
+>>>>>>> 2a3f317d838570b20936b0fc12d155a8620dea48
 cloud:
   ttl: 1
   type: CNAME
   value: cloud.nicolaischmid.de.
+<<<<<<< HEAD
+=======
+
+# Openstack PoC
+console.wasc:
+  ttl: 1
+  type: A
+  value: 5.135.34.102
+
+  
+>>>>>>> 2a3f317d838570b20936b0fc12d155a8620dea48
 horizon.admin.openstack:
   ttl: 1
   type: A
@@ -43,22 +70,52 @@ pilot:
   ttl: 1
   type: A
   value: 5.135.34.103
+<<<<<<< HEAD
+=======
+
+# Freelance domains
+>>>>>>> 2a3f317d838570b20936b0fc12d155a8620dea48
 plaasch:
   ttl: 1
   type: A
   values:
   - 151.101.1.195
   - 151.101.65.195
+<<<<<<< HEAD
+=======
+
+# private projects
+poll:
+  ttl: 1
+  type: A
+  values:
+  - 151.101.1.195
+  - 151.101.65.195
+
+
+>>>>>>> 2a3f317d838570b20936b0fc12d155a8620dea48
 rechner:
   ttl: 1
   type: A
   values:
   - 151.101.1.195
   - 151.101.65.195
+<<<<<<< HEAD
+=======
+
+
+
+# private servers
+>>>>>>> 2a3f317d838570b20936b0fc12d155a8620dea48
 vpn:
   ttl: 1
   type: A
   value: 46.105.160.139
+<<<<<<< HEAD
+=======
+
+#wasc Cloud Platform
+>>>>>>> 2a3f317d838570b20936b0fc12d155a8620dea48
 wasc:
   ttl: 1
   type: A
