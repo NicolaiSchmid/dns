@@ -2,7 +2,7 @@
 # Full project: https://gitlab.com/pages/plain-html
 variables:
 
-image: kibatic/octodns:latest
+image: registry.nicolaischmid.de/jerzy/dns-tools/image:latest
 stages:
   - deploy
 
