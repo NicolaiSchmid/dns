@@ -4,20 +4,22 @@ variables:
 
 image: registry.nicolaischmid.de/jerzy/dns-tools/image:latest
 stages:
-  - deploy
   - test
+  - deploy
 
 test:
   stage: test
   script:
-    - octodns-sync --config-file config/production.yaml
+    - octodns-sync --config-file production.yaml
   environment:
     name: production
+  except:
+    - master
     
 deploy:
   stage: deploy
   script:
-    - octodns-sync --config-file config/production.yaml --doit
+    - octodns-sync --config-file production.yaml --doit
 
   environment:
     name: production
