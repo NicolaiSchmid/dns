@@ -8,11 +8,11 @@ providers:
     token: env/CLOUDFLARE_TOKEN
 
 zones:
-#  schmid.uno.:
-#    sources:
-#      - config
-#    targets:
-#      - cloudflare
+  schmid.uno.:
+    sources:
+      - config
+    targets:
+      - cloudflare
   nicolais.ch.:
     sources:
       - config
