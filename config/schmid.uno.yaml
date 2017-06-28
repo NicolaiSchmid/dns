@@ -1,8 +1,8 @@
 '':
   - type: A
-    value: 
+    value: 5.135.34.102
   - type: MX
-    values: 5.135.34.102
+    values: 
       - priority: 10
         value: mx.zoho.com
       - priority: 20
