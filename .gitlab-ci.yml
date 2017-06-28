@@ -15,3 +15,10 @@ deploy:
     name: production
   only:
   - master
+
+deploy:
+  stage: deploy
+  script:
+    - octodns-sync --config-file config/production.yaml
+  environment:
+    name: production
