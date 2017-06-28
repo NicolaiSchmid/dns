@@ -19,3 +19,9 @@ zones:
       - config
     targets:
       - cloudflare
+
+  nicolaischmid.de.:
+    sources:
+      - config
+    targets:
+      - cloudflare

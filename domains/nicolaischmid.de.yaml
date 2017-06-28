@@ -1,0 +1,87 @@
+'':
+  - ttl: 1
+    type: A
+    value: 5.135.34.102
+  - ttl: 1
+    type: MX
+    values:
+    - exchange: mail.nicolaischmid.de.
+      preference: 10
+    - exchange: mx.zoho.com.
+      preference: 20
+    - exchange: mx2.zoho.com.
+      preference: 30
+  - ttl: 1
+    type: TXT
+    values:
+    - google-site-verification=aRu5qJjN7hCwjg1ZLjavwLUE9qokJj4oKWg7yRejafE
+    - v=spf1 mx a:cloud.nicolaischmid.de a:git.nicolaischmid.de a:mail.nicolaischmid.de
+      include:zoho.eu -all
+
+cloud:
+  ttl: 1
+  type: A
+  value: 5.135.34.96
+
+db1:
+  ttl: 1
+  type: A
+  value: 5.135.34.100
+
+default._domainkey:
+  ttl: 1
+  type: TXT
+  value: v=DKIM1\;k=rsa\;t=s\;s=email\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs3EjHu0KBGzRGbbpxobKDRgWpbmucLB2b+f77Pl30PUxXUZ3tVy3O1NVSk0zy9Djj2MZvnmhlGw6pU/ILUslznyQsGrhgJFC8u+MfqrXKQ0pZkW8Zv1s/kS7vwbD6J8Ac85IDwPpKWu7dI2oQ8+9Hv0tHgRzxnXU50gow5COajBM08Qlw7cGpq
+
+feature:
+  ttl: 1
+  type: A
+  values:
+  - 151.101.1.195
+  - 151.101.65.195
+
+git:
+  ttl: 1
+  type: A
+  value: 5.135.34.101
+
+mail:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
+
+plaasch:
+  ttl: 1
+  type: A
+  values:
+  - 151.101.1.195
+  - 151.101.65.195
+
+plaasch.freelance:
+  ttl: 1
+  type: A
+  values:
+    - 151.101.65.195
+    - 151.101.1.195
+
+registry:
+  ttl: 1
+  type: A
+  value: 5.135.34.101
+
+schneider.freelance:
+  ttl: 1
+  type: A
+  values:
+  - 151.101.1.195
+  - 151.101.65.195
+
+staging:
+  ttl: 1
+  type: A
+  value: 5.135.34.102
+
+web:
+  ttl: 1
+  type: A
+  value: 5.135.34.102
