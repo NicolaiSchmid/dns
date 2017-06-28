@@ -13,6 +13,7 @@ zones:
       - config
     targets:
       - cloudflare
+      
   nicolais.ch.:
     sources:
       - config
