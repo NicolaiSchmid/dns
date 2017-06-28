@@ -1,8 +1,8 @@
 '':
-  - type: CNAME
-    value: nicolaischmid.de.
+  - type: A
+    value: 
   - type: MX
-    values:
+    values: 5.135.34.102
       - priority: 10
         value: mx.zoho.com
       - priority: 20
