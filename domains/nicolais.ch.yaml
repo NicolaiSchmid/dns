@@ -61,6 +61,14 @@ openstack:
   ttl: 1
   type: A
   value: 46.105.160.139
+
+pi:
+  ttl: 1
+  type: A
+  values:
+  - 151.101.1.195
+  - 151.101.65.195
+
 pilot:
   ttl: 1
   type: A
