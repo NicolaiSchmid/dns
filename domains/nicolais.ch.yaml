@@ -52,11 +52,16 @@ kubernetes:
   ttl: 1
   type: A
   value: 5.135.34.97
-
 maas:
   ttl: 1
   type: A
   value: 5.135.34.98
+
+npm:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
+
 openstack:
   ttl: 1
   type: A
