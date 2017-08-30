@@ -25,47 +25,11 @@ cloud:
   value: cloud.nicolaischmid.de.
 
 # Openstack PoC
-console.wasc:
-  ttl: 1
-  type: A
-  value: 5.135.34.102
-
   
-horizon.admin.openstack:
-  ttl: 1
-  type: A
-  value: 46.105.160.139
-horizon.internal.openstack:
-  ttl: 1
-  type: A
-  value: 46.105.160.139
-horizon.openstack:
-  ttl: 1
-  type: A
-  value: 46.105.160.139
-juju:
-  ttl: 1
-  type: A
-  value: 5.135.34.99
-
-kubernetes:
-  ttl: 1
-  type: A
-  value: 5.135.34.97
-maas:
-  ttl: 1
-  type: A
-  value: 5.135.34.98
-
 npm:
   ttl: 1
   type: A
   value: 5.135.34.97
-
-openstack:
-  ttl: 1
-  type: A
-  value: 46.105.160.139
 
 pi:
   ttl: 1
@@ -73,11 +37,6 @@ pi:
   values:
   - 151.101.1.195
   - 151.101.65.195
-
-pilot:
-  ttl: 1
-  type: A
-  value: 5.135.34.103
 
 # Freelance domains
 plaasch:
@@ -95,21 +54,12 @@ poll:
   - 151.101.1.195
   - 151.101.65.195
 
-
 rechner:
   ttl: 1
   type: A
   values:
   - 151.101.1.195
   - 151.101.65.195
-
-
-
-# private servers
-vpn:
-  ttl: 1
-  type: A
-  value: 46.105.160.139
 
 #wasc Cloud Platform
 wasc:
