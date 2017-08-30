@@ -26,6 +26,11 @@ cloud:
 
 # Openstack PoC
   
+docker:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
+
 npm:
   ttl: 1
   type: A
