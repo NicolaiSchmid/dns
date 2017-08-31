@@ -1,0 +1,20 @@
+plaasch:
+  ttl: 1
+  type: A
+  values:
+  - 151.101.1.195
+  - 151.101.65.195
+
+plaasch.freelance:
+  ttl: 1
+  type: A
+  values:
+    - 151.101.65.195
+    - 151.101.1.195
+
+schneider.freelance:
+  ttl: 1
+  type: A
+  values:
+  - 151.101.1.195
+  - 151.101.65.195

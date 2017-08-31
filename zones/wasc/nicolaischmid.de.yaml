@@ -1,0 +1,14 @@
+db1:
+  ttl: 1
+  type: A
+  value: 5.135.34.100
+
+git:
+  ttl: 1
+  type: A
+  value: 5.135.34.101
+
+registry:
+  ttl: 1
+  type: A
+  value: 5.135.34.101

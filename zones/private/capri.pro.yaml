@@ -1,0 +1,9 @@
+'':
+  - type: A
+    values:
+      - 5.135.34.102
+
+staging:
+  type: A
+  values:
+    - 5.135.34.102

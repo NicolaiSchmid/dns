@@ -1,7 +1,4 @@
 '':
-  - type: A
-    values:
-      - 5.135.34.102
   - type: MX
     values:
       - priority: 25
@@ -9,7 +6,3 @@
   - type: SPF
     value: v=spf1 mx -all
 
-staging:
-  type: A
-  values:
-    - 5.135.34.102

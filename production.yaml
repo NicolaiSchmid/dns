@@ -1,27 +1,58 @@
 providers:
-  config:
+
+  # General SPF TXT Entries
+  general:
     class: octodns.provider.yaml.YamlProvider
-    directory: ./domains
+    directory: ./zones/general
+
+  # Private Domains
+  private:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones/private
+
+  # Freelance projects
+  freelance:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones/freelance
+
+  # Private projects
+  private_projects:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones/private_projects
+
+  wasc:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones/wasc
+
   cloudflare:
     class: octodns.provider.cloudflare.CloudflareProvider
     email: aaa662ec@opayq.com
     token: env/CLOUDFLARE_TOKEN
 
 zones:
-  schmid.uno.:
-    sources:
-      - config
-    targets:
-      - cloudflare
-      
   nicolais.ch.:
     sources:
-      - config
+      - general
+      - private
+      - freelance
+      - private_projects
+      - wasc
     targets:
       - cloudflare
 
   nicolaischmid.de.:
     sources:
-      - config
+      - general
+      - private
+      - freelance
+      - wasc
     targets:
       - cloudflare
+
+  schmid.uno.:
+    sources:
+      - general
+      - private
+    targets:
+      - cloudflare
+      

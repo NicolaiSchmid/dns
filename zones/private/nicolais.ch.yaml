@@ -1,0 +1,10 @@
+'':
+  - ttl: 1
+    type: A
+    value: 5.135.34.102
+
+# Seafile Cloud
+cloud:
+  ttl: 1
+  type: CNAME
+  value: cloud.nicolaischmid.de.

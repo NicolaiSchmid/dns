@@ -1,0 +1,22 @@
+'':
+  - ttl: 1
+    type: A
+    values:
+    - 151.101.1.195
+    - 151.101.65.195
+
+cloud:
+  ttl: 1
+  type: A
+  value: 5.135.34.96
+
+
+mail:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
+
+web:
+  ttl: 1
+  type: A
+  value: 5.135.34.102

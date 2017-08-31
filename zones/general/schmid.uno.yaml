@@ -1,8 +1,5 @@
 '':
   - ttl: 1
-    type: A
-    value: 5.135.34.102
-  - ttl: 1
     type: MX
     values:
     - exchange: mx.zoho.com.
