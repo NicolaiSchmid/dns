@@ -3,15 +3,15 @@ docker:
   type: A
   value: 5.135.34.97
 
-master.kubernetes:
-  ttl: 1
-  type: A
-  value: 46.105.160.139
-
 master.ceph:
   ttl: 1
   type: A
   value: 5.135.34.99
+
+master.kubernetes:
+  ttl: 1
+  type: A
+  value: 46.105.160.139
 
 node0.kubernetes:
   ttl: 1
