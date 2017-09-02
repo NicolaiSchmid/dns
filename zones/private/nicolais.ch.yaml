@@ -8,3 +8,8 @@ cloud:
   ttl: 1
   type: CNAME
   value: cloud.nicolaischmid.de.
+
+minecraft:
+  ttl:
+  type: A
+  value: 5.135.34.97
