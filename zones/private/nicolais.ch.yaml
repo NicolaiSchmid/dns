@@ -10,6 +10,6 @@ cloud:
   value: cloud.nicolaischmid.de.
 
 minecraft:
-  ttl:
+  ttl: 1
   type: A
   value: 5.135.34.97
