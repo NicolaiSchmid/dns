@@ -3,20 +3,27 @@ docker:
   type: A
   value: 5.135.34.97
 
-master.ceph:
-  ttl: 1
-  type: A
-  value: 5.135.34.99
 
 master.kubernetes:
   ttl: 1
   type: A
   value: 46.105.160.139
 
+
+node0.ceph:
+  ttl: 1
+  type: A
+  value: 5.135.34.99
+
 node0.kubernetes:
   ttl: 1
   type: A
   value: 5.135.34.98
+
+node1.ceph:
+  ttl: 1
+  type: A
+  value: 5.135.34.103
   
 npm:
   ttl: 1
