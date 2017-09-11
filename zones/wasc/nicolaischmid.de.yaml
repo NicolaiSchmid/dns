@@ -1,3 +1,8 @@
+cheeses.test:
+  ttl: 1
+  type: CNAME
+  value: traefik.nicolais.ch.
+
 db1:
   ttl: 1
   type: A
