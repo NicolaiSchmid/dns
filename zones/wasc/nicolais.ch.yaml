@@ -40,6 +40,11 @@ traefik:
   type: A
   value: 5.135.34.98
 
+traefik.kubernetes:
+  ttl: 1
+  type: A
+  value: 5.135.34.98
+
 wasc:
   ttl: 1
   type: A
