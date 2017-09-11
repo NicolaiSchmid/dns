@@ -1,8 +1,3 @@
-cheeses.test:
-  ttl: 1
-  type: CNAME
-  value: traefik.nicolais.ch.
-
 db1:
   ttl: 1
   type: A
@@ -12,6 +7,12 @@ git:
   ttl: 1
   type: A
   value: 5.135.34.101
+
+npm:
+  ttl: 1
+  type: a
+  value: 5.135.34.98
+
 
 registry:
   ttl: 1
