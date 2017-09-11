@@ -36,7 +36,7 @@ npm:
   value: 5.135.34.97
 
 pre.wasc:
-  ttl:
+  ttl: 1
   type: A
   value: 5.135.34.98
 
