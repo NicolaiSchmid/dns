@@ -35,6 +35,11 @@ npm:
   type: A
   value: 5.135.34.97
 
+pre.wasc:
+  ttl:
+  type: A
+  value: 5.135.34.98
+
 traefik:
   ttl: 1
   type: A
