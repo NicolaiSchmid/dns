@@ -10,7 +10,7 @@ git:
 
 npm:
   ttl: 1
-  type: a
+  type: A
   value: 5.135.34.98
 
 
