@@ -1,56 +1,14 @@
-api.pre.wasc:
+accounts.wasc:
   ttl: 1
   type: A
   value: 5.135.34.98
 
-docker:
-  ttl: 1
-  type: A
-  value: 5.135.34.97
-
-master.ceph:
-  ttl: 1
-  type: A
-  value: 137.74.189.198
-
-
-master.kubernetes:
-  ttl: 1
-  type: A
-  value: 46.105.160.139
-
-
-node0.ceph:
-  ttl: 1
-  type: A
-  value: 5.135.34.99
-
-node0.kubernetes:
+api.wasc:
   ttl: 1
   type: A
   value: 5.135.34.98
 
-node1.ceph:
-  ttl: 1
-  type: A
-  value: 5.135.34.103
-  
-npm:
-  ttl: 1
-  type: A
-  value: 5.135.34.97
-
-pre.wasc:
-  ttl: 1
-  type: A
-  value: 5.135.34.98
-
-traefik:
-  ttl: 1
-  type: A
-  value: 5.135.34.98
-
-traefik.kubernetes:
+payments.wasc:
   ttl: 1
   type: A
   value: 5.135.34.98
@@ -58,6 +16,4 @@ traefik.kubernetes:
 wasc:
   ttl: 1
   type: A
-  values:
-  - 151.101.1.195
-  - 151.101.65.195
+  value: 5.135.34.98

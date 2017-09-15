@@ -20,9 +20,22 @@ providers:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones/private_projects
 
+  # infrastructure
+  infrastructure:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones/infrastructure
+
   wasc:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones/wasc
+
+  wasc_pre:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones/wasc_pre
+
+  wasc_internal:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones/wasc_internal
 
   cloudflare:
     class: octodns.provider.cloudflare.CloudflareProvider
@@ -37,6 +50,9 @@ zones:
       - freelance
       - private_projects
       - wasc
+      - wasc_pre
+      - wasc_internal
+      - infrastructure
     targets:
       - cloudflare
 
