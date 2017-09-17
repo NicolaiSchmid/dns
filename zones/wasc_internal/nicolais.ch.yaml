@@ -1,7 +1,3 @@
-npm:
-  ttl: 1
-  type: A
-  value: 5.135.34.97
 
 access:wasc:
   ttl: 1
@@ -12,3 +8,8 @@ api.access.wasc:
   ttl:
   type: A
   value: 5.135.34.98
+
+npm:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
