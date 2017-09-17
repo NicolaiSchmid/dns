@@ -5,7 +5,7 @@ access:wasc:
   value: 5.135.34.98
 
 api.access.wasc:
-  ttl:
+  ttl: 1
   type: A
   value: 5.135.34.98
 
