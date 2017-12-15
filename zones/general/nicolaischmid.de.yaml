@@ -2,12 +2,10 @@
   - ttl: 1
     type: MX
     values:
-    - exchange: mail.nicolaischmid.de.
-      preference: 10
     - exchange: mx.zoho.com.
-      preference: 20
+      preference: 10
     - exchange: mx2.zoho.com.
-      preference: 30
+      preference: 20
   - ttl: 1
     type: TXT
     values:
