@@ -1,8 +1,0 @@
-'':
-  - type: MX
-    values:
-      - priority: 25
-        value: mail.nicolaischmid.de.
-  - type: SPF
-    value: v=spf1 mx -all
-
