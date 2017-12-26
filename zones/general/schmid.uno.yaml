@@ -9,7 +9,7 @@
     - exchange: mx3.zoho.com.
       preference: 50
   - type: SPF
-    value: v=spf1 mx include:zohom.com -all
+    value: v=spf1 mx include:_spf.nicolaischmid.de -all
 default._domainkey:
   type: TXT
   value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjI8LuZZ61TbY2kIJds0r8iUzQEBCmOrAKAx4Pb6YuiVOwrGWV40qMpr+nrMkUFJVopyTa37bouISIVys9tzH3TUNY3hjyhFsPR/8vawbJHWuD82wMl36vwcL6U3zBsPYPMCvqPNwbrThaaBUTuEHXUJ6T0HQ5hQuMROp3/w7D9QIDAQAB

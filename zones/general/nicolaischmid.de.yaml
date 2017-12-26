@@ -15,6 +15,10 @@
     - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
     - v=spf1 include:zoho.com ~all
 
+_spf:
+  - type: SPF
+    value: v=spf1 mx include:zoho.com -all
+
 default._domainkey:
   ttl: 1
   type: TXT
