@@ -10,10 +10,11 @@
     type: TXT
     values:
     - google-site-verification=aRu5qJjN7hCwjg1ZLjavwLUE9qokJj4oKWg7yRejafE
-    - v=spf1 mx a:cloud.nicolaischmid.de a:git.nicolaischmid.de a:mail.nicolaischmid.de
-      include:zoho.eu -all
     - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
-    - v=spf1 include:zoho.com ~all
+
+  - ttl: 1
+    type: SPF
+    value: v=spf1 mx a:cloud.nicolaischmid.de a:git.nicolaischmid.de a:mail.nicolaischmid.de -all
 
 _spf:
   - type: SPF
