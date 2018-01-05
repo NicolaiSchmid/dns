@@ -8,12 +8,22 @@
       value: mx2.zoho.com.
     - priority: 50
       value: mx3.zoho.com.
+
+  - ttl: 1
+    type: CAA
+    values:
+      - flags: 0
+        tag: issuewild
+        value: letsencrypt.org
+      - flags: 0
+        tag: issuewild
+        value: comodoca.com
   
   - ttl: 1
     type: TXT
     values: 
     - v=spf1 mx include:_spf.nicolaischmid.de -all
-    
+
 default._domainkey:
   - ttl: 1
     type: TXT

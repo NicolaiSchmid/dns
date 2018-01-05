@@ -6,5 +6,15 @@
         value: redirect.ovh.net.
 
   - ttl: 1
+    type: CAA
+    values:
+      - flags: 0
+        tag: issuewild
+        value: letsencrypt.org
+      - flags: 0
+        tag: issuewild
+        value: comodoca.com
+
+  - ttl: 1
     type: TXT
     value: google-site-verification=9kxIDge0DN4UCYfFyuMzt4imLnSKXp491NQvWEAtjgQ

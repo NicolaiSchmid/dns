@@ -6,6 +6,15 @@
     - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
     - v=spf1 mx a:cloud.nicolaischmid.de a:git.nicolaischmid.de a:mail.nicolaischmid.de -all
 
+  - ttl: 1
+    type: CAA
+    values:
+      - flags: 0
+        tag: issuewild
+        value: letsencrypt.org
+      - flags: 0
+        tag: issuewild
+        value: comodoca.com
 
 _spf:
   - ttl: 1
