@@ -1,26 +1,18 @@
 '':
   - ttl: 1
-    type: MX
-    values:
-    - exchange: mx.zoho.com.
-      preference: 10
-    - exchange: mx2.zoho.com.
-      preference: 20
-  - ttl: 1
     type: TXT
     values:
     - google-site-verification=aRu5qJjN7hCwjg1ZLjavwLUE9qokJj4oKWg7yRejafE
     - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
+    - v=spf1 mx a:cloud.nicolaischmid.de a:git.nicolaischmid.de a:mail.nicolaischmid.de -all
 
-  - ttl: 1
-    type: SPF
-    value: v=spf1 mx a:cloud.nicolaischmid.de a:git.nicolaischmid.de a:mail.nicolaischmid.de -all
 
 _spf:
-  - type: SPF
+  - ttl: 1
+    type: TXT
     value: v=spf1 mx include:zoho.com -all
 
 default._domainkey:
-  ttl: 1
-  type: TXT
-  value: v=DKIM1\;k=rsa\;t=s\;s=email\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs3EjHu0KBGzRGbbpxobKDRgWpbmucLB2b+f77Pl30PUxXUZ3tVy3O1NVSk0zy9Djj2MZvnmhlGw6pU/ILUslznyQsGrhgJFC8u+MfqrXKQ0pZkW8Zv1s/kS7vwbD6J8Ac85IDwPpKWu7dI2oQ8+9Hv0tHgRzxnXU50gow5COajBM08Qlw7cGpq
+  - ttl: 1
+    type: TXT
+    value: v=DKIM1\;k=rsa\;t=s\;s=email\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs3EjHu0KBGzRGbbpxobKDRgWpbmucLB2b+f77Pl30PUxXUZ3tVy3O1NVSk0zy9Djj2MZvnmhlGw6pU/ILUslznyQsGrhgJFC8u+MfqrXKQ0pZkW8Zv1s/kS7vwbD6J8Ac85IDwPpKWu7dI2oQ8+9Hv0tHgRzxnXU50gow5COajBM08Qlw7cGpq
