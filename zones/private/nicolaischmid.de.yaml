@@ -15,6 +15,10 @@ cloud:
   type: A
   value: 5.135.34.96
 
+cms:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
 
 mail:
   ttl: 1
