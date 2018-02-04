@@ -12,10 +12,7 @@
       - flags: 0
         tag: issue
         value: letsencrypt.org
-  - ttl: 1
-    type: CAA
-    values:
-      - flags: 0
+      - flags: 1
         tag: issuewild
         value: letsencrypt.org
 
