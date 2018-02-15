@@ -29,9 +29,3 @@ node1.ceph:
   ttl: 1
   type: A
   value: 5.135.34.103
-  
-traefik:
-  ttl: 1
-  type: A
-  value: 46.105.160.139
-

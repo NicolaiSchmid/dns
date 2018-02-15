@@ -13,8 +13,3 @@ registry:
   type: A
   value: 5.135.34.101
 
-
-traefik:
-  ttl: 1
-  type: CNAME
-  value: traefik.nicolais.ch.

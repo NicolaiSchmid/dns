@@ -1,9 +1,0 @@
-api.pre.wasc:
-  ttl: 1
-  type: A
-  value: 5.135.34.98
-
-pre.wasc:
-  ttl: 1
-  type: A
-  value: 5.135.34.98
