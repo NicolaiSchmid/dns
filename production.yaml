@@ -45,7 +45,6 @@ zones:
       - private
       - freelance
       - private_projects
-      - wasc
       - wasc_internal
       - infrastructure
     targets:
