@@ -13,11 +13,11 @@
     type: CAA
     values:
       - flags: 0
+        tag: issue
+        value: letsencrypt.org
+      - flags: 1
         tag: issuewild
         value: letsencrypt.org
-      - flags: 0
-        tag: issuewild
-        value: comodoca.com
   
   - ttl: 1
     type: TXT
