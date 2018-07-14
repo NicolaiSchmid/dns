@@ -23,6 +23,10 @@
     type: TXT
     values: 
     - v=spf1 mx include:_spf.nicolaischmid.de -all
+  - ttl: 1
+    type: TXT
+    values:
+    - google-site-verification=yF98KJ9rNCGNj7kndcDrGg9AGvsxfvpyTxriXWjG99g
 
 default._domainkey:
   - ttl: 1
