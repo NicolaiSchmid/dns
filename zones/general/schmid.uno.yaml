@@ -1,5 +1,11 @@
 '':
   - ttl: 1
+    type: A
+    values:
+    - 151.101.1.195
+    - 151.101.65.195
+
+  - ttl: 1
     type: MX
     values:
     - priority: 10
