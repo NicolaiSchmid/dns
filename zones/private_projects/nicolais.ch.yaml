@@ -23,3 +23,8 @@ rechner:
   values:
   - 151.101.1.195
   - 151.101.65.195
+
+slack.webhook:
+  ttl: 1
+  type: A
+  value: 87.150.184.139
