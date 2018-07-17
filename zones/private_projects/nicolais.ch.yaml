@@ -1,16 +1,4 @@
-api.poll:
-  ttl: 1
-  type: A
-  value: 5.135.34.102
-
 pi:
-  ttl: 1
-  type: A
-  values:
-  - 151.101.1.195
-  - 151.101.65.195
-
-poll:
   ttl: 1
   type: A
   values:
@@ -23,8 +11,3 @@ rechner:
   values:
   - 151.101.1.195
   - 151.101.65.195
-
-slack.webhook:
-  ttl: 1
-  type: A
-  value: 87.150.184.139

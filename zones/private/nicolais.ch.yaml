@@ -8,8 +8,3 @@ minecraft:
   ttl: 1
   type: A
   value: 5.135.34.97
-
-play:
-  ttl: 1
-  type: A
-  value: 5.135.34.97

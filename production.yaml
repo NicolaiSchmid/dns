@@ -43,7 +43,6 @@ zones:
     sources:
       - general
       - private
-      - freelance
       - private_projects
       - wasc_internal
       - infrastructure
@@ -55,7 +54,7 @@ zones:
       - general
       - private
       - freelance
-      - wasc
+      - wasc_internal
     targets:
       - cloudflare
 

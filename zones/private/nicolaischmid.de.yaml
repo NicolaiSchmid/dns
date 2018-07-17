@@ -5,30 +5,10 @@
     - 151.101.1.195
     - 151.101.65.195
 
-blog:
-  ttl: 1
-  type: A
-  value: 5.135.34.98
-
 cloud:
   ttl: 1
   type: A
   value: 5.135.34.96
-
-cms:
-  ttl: 1
-  type: A
-  value: 5.135.34.97
-
-mail:
-  ttl: 1
-  type: A
-  value: 5.135.34.97
-
-web:
-  ttl: 1
-  type: A
-  value: 5.135.34.102
 
 www:
   - ttl: 1
