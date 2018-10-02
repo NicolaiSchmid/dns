@@ -1,5 +1,4 @@
 providers:
-
   # General SPF TXT Entries
   general:
     class: octodns.provider.yaml.YamlProvider
@@ -15,20 +14,6 @@ providers:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones/freelance
 
-  # Private projects
-  private_projects:
-    class: octodns.provider.yaml.YamlProvider
-    directory: ./zones/private_projects
-
-  # infrastructure
-  infrastructure:
-    class: octodns.provider.yaml.YamlProvider
-    directory: ./zones/infrastructure
-
-  wasc:
-    class: octodns.provider.yaml.YamlProvider
-    directory: ./zones/wasc
-
   wasc_internal:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones/wasc_internal
@@ -39,16 +24,6 @@ providers:
     token: env/CLOUDFLARE_TOKEN
 
 zones:
-  nicolais.ch.:
-    sources:
-      - general
-      - private
-      - private_projects
-      - wasc_internal
-      - infrastructure
-    targets:
-      - cloudflare
-
   nicolaischmid.de.:
     sources:
       - general
@@ -63,4 +38,3 @@ zones:
       - general
     targets:
       - cloudflare
-      

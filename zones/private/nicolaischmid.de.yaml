@@ -10,6 +10,11 @@ cloud:
   type: A
   value: 5.135.34.96
 
+minecraft:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
+
 www:
   - ttl: 1
     type: A

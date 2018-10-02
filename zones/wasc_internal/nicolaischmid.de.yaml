@@ -3,8 +3,12 @@ git:
   type: A
   value: 5.135.34.101
 
+npm:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
+
 registry:
   ttl: 1
   type: A
   value: 5.135.34.101
-
