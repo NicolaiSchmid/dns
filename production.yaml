@@ -36,5 +36,6 @@ zones:
   schmid.uno.:
     sources:
       - general
+      - private
     targets:
       - cloudflare
