@@ -18,6 +18,13 @@ erp:
   values:
     - 5.135.34.97
 
+musikum:
+  ttl: 1
+  type: A
+  values:
+    - 151.101.1.195
+    - 151.101.65.195
+
 schneider.freelance:
   ttl: 1
   type: A
