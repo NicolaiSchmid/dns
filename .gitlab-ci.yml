@@ -11,8 +11,6 @@ test:
   stage: test
   script:
     - octodns-sync --config-file production.yaml
-  environment:
-    name: production
   except:
     - master
     
