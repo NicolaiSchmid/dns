@@ -18,6 +18,10 @@ providers:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones/wasc_internal
 
+  wasc:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones/wasc
+
   cloudflare:
     class: octodns.provider.cloudflare.CloudflareProvider
     email: aaa662ec@opayq.com
@@ -30,6 +34,7 @@ zones:
       - private
       - freelance
       - wasc_internal
+      - wasc
     targets:
       - cloudflare
 
