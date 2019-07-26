@@ -1,0 +1,10 @@
+"*.wasc":
+  ttl: 1
+  type: A
+  value: 159.69.40.159
+
+wasc:
+  ttl: 1
+  type: A
+  value: 159.69.40.159
+
