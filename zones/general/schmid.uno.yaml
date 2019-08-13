@@ -31,6 +31,15 @@
     - v=spf1 mx include:_spf.nicolaischmid.de -all
     - google-site-verification=yF98KJ9rNCGNj7kndcDrGg9AGvsxfvpyTxriXWjG99g
 
+_autodiscover._tcp:
+  ttl: 1
+  type: SRV
+  value:
+    port: 443
+    priority: 0
+    target: autodiscover.zoho.com.
+    weight: 0
+
 default._domainkey:
   - ttl: 1
     type: TXT
