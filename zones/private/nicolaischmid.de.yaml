@@ -22,6 +22,11 @@ cloud:
   type: A
   value: 5.135.34.96
 
+docker:
+  ttl: 1
+  type: A
+  value: 5.135.34.97
+
 lopha:
   ttl: 1
   type: A
