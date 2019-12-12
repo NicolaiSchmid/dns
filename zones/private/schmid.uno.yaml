@@ -13,4 +13,4 @@ drop:
 us.vpn:
   - ttl: 1
     type: A
-    value: 34.226.214.241
+    value: 3.87.199.69
