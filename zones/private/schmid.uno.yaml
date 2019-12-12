@@ -9,3 +9,8 @@ drop:
   - ttl: 1
     type: A
     value: 5.135.34.98
+
+us.vpn:
+  - ttl: 1
+    type: A
+    value: 34.226.214.241
