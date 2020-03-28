@@ -27,6 +27,11 @@ docker:
   type: A
   value: 5.135.34.97
 
+julian:
+  ttl: 60
+  type: A
+  value: 138.201.216.36
+
 minecraft:
   ttl: 1
   type: A
