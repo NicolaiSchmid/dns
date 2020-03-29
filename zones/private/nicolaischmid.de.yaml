@@ -27,6 +27,11 @@ docker:
   type: A
   value: 5.135.34.97
 
+donateicecreamto:
+  ttl: 60
+  type: A
+  value: 1.1.1.1
+
 julian:
   ttl: 60
   type: A
