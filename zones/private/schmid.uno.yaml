@@ -5,6 +5,11 @@ chris:
       - 151.101.1.195
       - 151.101.65.195
 
+cloud:
+  - ttl: 1
+    type: A
+    value: 5.135.34.99
+
 drop:
   - ttl: 1
     type: A
