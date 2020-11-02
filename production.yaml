@@ -44,8 +44,3 @@ zones:
       - private
     targets:
       - cloudflare
-  nicolais.blog.:
-    sources:
-      - private
-    targets:
-      - cloudflare
