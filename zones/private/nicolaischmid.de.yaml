@@ -15,7 +15,7 @@ abi:
 blog:
   ttl: 1
   type: A
-  value: 159.69.40.159
+  value: 138.201.216.36
 
 cloud:
   ttl: 1
