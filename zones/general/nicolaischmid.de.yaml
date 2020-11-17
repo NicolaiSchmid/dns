@@ -18,6 +18,9 @@
       - flags: 1
         tag: issuewild
         value: letsencrypt.org
+      - flags: 0
+        tag: issue
+        value: pki.goog
 
 _spf:
   - ttl: 1
