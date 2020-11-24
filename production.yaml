@@ -44,3 +44,8 @@ zones:
       - private
     targets:
       - cloudflare
+  nicolaischmid.org.:
+    sources:
+      - general
+    targets:
+      - cloudflare
