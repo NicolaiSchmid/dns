@@ -32,6 +32,11 @@ donateicecreamto:
   type: A
   value: 1.1.1.1
 
+gesetze:
+  ttl: 60
+  type: CNAME
+  value: cname.vercel-dns.com
+
 julian:
   ttl: 60
   type: A
