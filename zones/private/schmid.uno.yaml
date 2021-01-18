@@ -15,6 +15,11 @@ drop:
     type: A
     value: 5.135.34.98
 
+id:
+  - ttl: 10
+    type: A
+    value: 138.201.216.36
+
 us.vpn:
   - ttl: 1
     type: A
