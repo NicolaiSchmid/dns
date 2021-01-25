@@ -10,6 +10,11 @@ cloud:
     type: A
     value: 5.135.34.99
 
+corona:
+  - ttl: 10
+    type: A
+    value: 138.201.216.36
+
 drop:
   - ttl: 1
     type: A
