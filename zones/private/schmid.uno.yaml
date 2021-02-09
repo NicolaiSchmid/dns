@@ -1,3 +1,8 @@
+assets:
+  - ttl: 10
+    type: A
+    value: 138.201.216.36
+
 chris:
   - ttl: 1
     type: A
