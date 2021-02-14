@@ -15,6 +15,11 @@ drop:
     type: A
     value: 5.135.34.98
 
+gesetze:
+  ttl: 60
+  type: CNAME
+  value: cname.vercel-dns.com
+
 us.vpn:
   - ttl: 1
     type: A
