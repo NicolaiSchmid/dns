@@ -21,6 +21,10 @@
       - flags: 0
         tag: issue
         value: pki.goog
+_ens:
+  - ttl: 1
+    type: TXT
+    value: a=0x809fF478334CB242037f63b05738Cc183e14b4d2
 
 _spf:
   - ttl: 1
