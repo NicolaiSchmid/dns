@@ -7,6 +7,7 @@
     # Freelance Google
     - google-site-verification=tiFMbFs1XFmWfPOlv0HN6N06j9UUT2TDGFqr1x-qqbE
     - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
+    - v=spf1 -all
 
   - ttl: 1
     type: CAA
@@ -24,11 +25,6 @@ _ens:
   - ttl: 1
     type: TXT
     value: a=0x809fF478334CB242037f63b05738Cc183e14b4d2
-
-_spf:
-  - ttl: 1
-    type: TXT
-    value: v=spf1 mx include:zoho.com -all
 
 default._domainkey:
   - ttl: 1
