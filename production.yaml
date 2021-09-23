@@ -24,7 +24,7 @@ providers:
 
   cloudflare:
     class: octodns.provider.cloudflare.CloudflareProvider
-    email: aaa662ec@opayq.com
+    # email: aaa662ec@opayq.com
     token: env/CLOUDFLARE_TOKEN
 
 zones:
