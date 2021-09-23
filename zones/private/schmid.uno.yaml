@@ -43,8 +43,3 @@ id:
     type: A
     values:
       - 138.201.216.36
-
-us.vpn:
-  - ttl: 1
-    type: A
-    value: 54.165.34.38

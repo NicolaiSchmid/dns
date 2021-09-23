@@ -8,21 +8,6 @@ git:
   type: A
   value: 5.135.34.101
 
-matchbox:
-  ttl: 1
-  type: CNAME
-  value: mail.wasc.io.
-
-npm:
-  ttl: 1
-  type: A
-  value: 5.135.34.97
-
-project:
-  ttl: 1
-  type: A
-  value: 137.74.189.198
-
 registry:
   ttl: 1
   type: A
