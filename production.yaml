@@ -38,3 +38,8 @@ zones:
       - general
     targets:
       - cloudflare
+  nicolais.blog.:
+    sources:
+      - general
+    targets:
+      - cloudflare
