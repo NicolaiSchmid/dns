@@ -1,3 +1,9 @@
+assets:
+  - ttl: 1
+    type: A
+    values:
+      - 138.201.216.36
+
 chris:
   - ttl: 1
     type: A
@@ -10,10 +16,33 @@ cloud:
     type: A
     value: 5.135.34.99
 
+corona:
+  - ttl: 1
+    type: A
+    values:
+      - 138.201.216.36
+
+data:
+  - ttl: 1
+    type: A
+    values:
+      - 5.135.34.102
+
 drop:
   - ttl: 1
     type: A
     value: 5.135.34.98
+
+gesetze:
+  - ttl: 1
+    type: CNAME
+    value: cname.vercel-dns.com.
+
+id:
+  - ttl: 1
+    type: A
+    values:
+      - 138.201.216.36
 
 us.vpn:
   - ttl: 1
