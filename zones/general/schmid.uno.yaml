@@ -28,7 +28,7 @@
   - ttl: 1
     type: TXT
     values: 
-    - v=spf1 mx include:_spf.nicolaischmid.de -all
+    - v=spf1 mx include:zoho.com -all
     - google-site-verification=yF98KJ9rNCGNj7kndcDrGg9AGvsxfvpyTxriXWjG99g
 
 _autodiscover._tcp:

@@ -3,3 +3,4 @@
     type: TXT
     values:
     - nicolais.blog
+    - v=spf1 -all

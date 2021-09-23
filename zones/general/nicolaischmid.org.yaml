@@ -3,3 +3,4 @@
     type: TXT
     values:
     - nicolaischmid.org
+    - v=spf1 -all
