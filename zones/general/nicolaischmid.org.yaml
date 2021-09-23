@@ -1,4 +1,11 @@
 '':
+  - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 1
+    type: A
+    value: 192.0.2.1
+    
   - ttl: 1
     type: TXT
     values:
