@@ -28,4 +28,4 @@ donateicecreamto:
       proxied: true
   ttl: 60
   type: A
-  value: 1.1.1.1
+  value: 192.0.2.1
