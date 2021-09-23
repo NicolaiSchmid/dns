@@ -7,7 +7,6 @@
     # Freelance Google
     - google-site-verification=tiFMbFs1XFmWfPOlv0HN6N06j9UUT2TDGFqr1x-qqbE
     - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
-    - v=spf1 mx a:cloud.nicolaischmid.de a:git.nicolaischmid.de a:mail.nicolaischmid.de -all
 
   - ttl: 1
     type: CAA

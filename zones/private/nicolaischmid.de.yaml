@@ -17,11 +17,6 @@ blog:
   type: A
   value: 192.0.2.1
 
-cloud:
-  ttl: 1
-  type: A
-  value: 5.135.34.96
-
 docker:
   ttl: 1
   type: A
@@ -31,20 +26,3 @@ donateicecreamto:
   ttl: 60
   type: A
   value: 1.1.1.1
-
-julian:
-  ttl: 60
-  type: A
-  value: 138.201.216.36
-
-minecraft:
-  ttl: 1
-  type: A
-  value: 5.135.34.97
-
-www:
-  - ttl: 1
-    type: A
-    values:
-      - 151.101.1.195
-      - 151.101.65.195
