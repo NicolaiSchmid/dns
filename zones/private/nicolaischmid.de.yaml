@@ -23,6 +23,9 @@ docker:
   value: 5.135.34.97
 
 donateicecreamto:
+  octodns:
+    cloudflare:
+      proxied: true
   ttl: 60
   type: A
   value: 1.1.1.1
