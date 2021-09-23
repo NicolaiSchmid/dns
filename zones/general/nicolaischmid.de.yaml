@@ -25,8 +25,3 @@ _ens:
   - ttl: 1
     type: TXT
     value: a=0x809fF478334CB242037f63b05738Cc183e14b4d2
-
-default._domainkey:
-  - ttl: 1
-    type: TXT
-    value: v=DKIM1\;k=rsa\;t=s\;s=email\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs3EjHu0KBGzRGbbpxobKDRgWpbmucLB2b+f77Pl30PUxXUZ3tVy3O1NVSk0zy9Djj2MZvnmhlGw6pU/ILUslznyQsGrhgJFC8u+MfqrXKQ0pZkW8Zv1s/kS7vwbD6J8Ac85IDwPpKWu7dI2oQ8+9Hv0tHgRzxnXU50gow5COajBM08Qlw7cGpq
