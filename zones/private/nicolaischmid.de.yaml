@@ -1,9 +1,10 @@
 "":
   - ttl: 1
-    type: A
-    values:
-      - 151.101.1.195
-      - 151.101.65.195
+    type: CNAME
+    value: cloudflare-ipfs.com.
+  - ttl: 1
+    type: TXT
+    value: dnslink=/ipfs/QmWJ83KtwFQMEPcJxJ6f6hc2tERYMBAzPtw6D8pYsj7Dc6
 
 abi:
   ttl: 1
