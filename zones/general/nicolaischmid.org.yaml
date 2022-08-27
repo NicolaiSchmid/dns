@@ -1,13 +1,14 @@
-'':
+# Redirected to nicolaischmid.de
+"":
   - octodns:
       cloudflare:
         proxied: true
     ttl: 1
     type: A
     value: 192.0.2.1
-    
+
   - ttl: 1
     type: TXT
     values:
-    - nicolaischmid.org
-    - v=spf1 -all
+      - nicolaischmid.org
+      - v=spf1 -all
