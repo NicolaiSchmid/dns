@@ -33,12 +33,8 @@ zones:
       - private
     targets:
       - cloudflare
+
   nicolaischmid.org.:
-    sources:
-      - general
-    targets:
-      - cloudflare
-  nicolais.blog.:
     sources:
       - general
     targets:

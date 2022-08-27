@@ -1,19 +1,21 @@
-'':
-  - ttl: 1
+# Redirected to nicolaischmid.de
+"":
+  - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 1
     type: A
-    values:
-    - 151.101.1.195
-    - 151.101.65.195
+    value: 192.0.2.1
 
   - ttl: 1
     type: MX
     values:
-    - priority: 10
-      value: mx.zoho.com.
-    - priority: 20
-      value: mx2.zoho.com.
-    - priority: 50
-      value: mx3.zoho.com.
+      - priority: 10
+        value: mx.zoho.com.
+      - priority: 20
+        value: mx2.zoho.com.
+      - priority: 50
+        value: mx3.zoho.com.
 
   - ttl: 1
     type: CAA
@@ -24,12 +26,12 @@
       - flags: 1
         tag: issuewild
         value: letsencrypt.org
-  
+
   - ttl: 1
     type: TXT
-    values: 
-    - v=spf1 mx include:zoho.com -all
-    - google-site-verification=yF98KJ9rNCGNj7kndcDrGg9AGvsxfvpyTxriXWjG99g
+    values:
+      - v=spf1 mx include:zoho.com -all
+      - google-site-verification=yF98KJ9rNCGNj7kndcDrGg9AGvsxfvpyTxriXWjG99g
 
 _autodiscover._tcp:
   ttl: 1

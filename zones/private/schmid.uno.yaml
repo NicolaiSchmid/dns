@@ -22,12 +22,6 @@ corona:
     values:
       - 138.201.216.36
 
-data:
-  - ttl: 1
-    type: A
-    values:
-      - 5.135.34.102
-
 drop:
   - ttl: 1
     type: A
