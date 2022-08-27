@@ -1,13 +1,13 @@
-'':
+"":
   - ttl: 1
     type: TXT
     values:
-    # Personal Google
-    - google-site-verification=aRu5qJjN7hCwjg1ZLjavwLUE9qokJj4oKWg7yRejafE
-    # Freelance Google
-    - google-site-verification=tiFMbFs1XFmWfPOlv0HN6N06j9UUT2TDGFqr1x-qqbE
-    - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
-    - v=spf1 -all
+      # Personal Google
+      - google-site-verification=aRu5qJjN7hCwjg1ZLjavwLUE9qokJj4oKWg7yRejafE
+      # Freelance Google
+      - google-site-verification=tiFMbFs1XFmWfPOlv0HN6N06j9UUT2TDGFqr1x-qqbE
+      - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
+      - v=spf1 -all
 
   - ttl: 1
     type: CAA
@@ -18,9 +18,6 @@
       - flags: 1
         tag: issuewild
         value: letsencrypt.org
-      - flags: 0
-        tag: issue
-        value: pki.goog
 _ens:
   - ttl: 1
     type: TXT
