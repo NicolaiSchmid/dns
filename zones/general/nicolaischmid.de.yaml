@@ -7,7 +7,7 @@
       # Freelance Google
       - google-site-verification=tiFMbFs1XFmWfPOlv0HN6N06j9UUT2TDGFqr1x-qqbE
       - keybase-site-verification=a8VocIKD_Hl4VSV62GHAoDDdL_JSpB0Qey_FFlQ-v_U
-      - v=spf1 -all
+      - v=spf1 include:_spf.mx.cloudflare.net ~all
 
   - ttl: 1
     type: CAA
@@ -18,6 +18,17 @@
       - flags: 1
         tag: issuewild
         value: letsencrypt.org
+
+  - ttl: 1
+    type: MX
+    values:
+      - priority: 50
+        value: route1.mx.cloudflare.net.
+      - priority: 7
+        value: route2.mx.cloudflare.net
+      - priority: 72
+        value: route3.mx.cloudflare.net
+
 _ens:
   - ttl: 1
     type: TXT
