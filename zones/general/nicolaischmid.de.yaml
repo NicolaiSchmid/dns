@@ -25,9 +25,9 @@
       - priority: 50
         value: route1.mx.cloudflare.net.
       - priority: 7
-        value: route2.mx.cloudflare.net
+        value: route2.mx.cloudflare.net.
       - priority: 72
-        value: route3.mx.cloudflare.net
+        value: route3.mx.cloudflare.net.
 
 _ens:
   - ttl: 1
