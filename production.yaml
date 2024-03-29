@@ -3,18 +3,21 @@ providers:
   general:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones/general
+    enforce_order: False
 
   # Private Domains
   private:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones/private
+    enforce_order: False
 
   wasc_internal:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones/wasc_internal
+    enforce_order: False
 
   cloudflare:
-    class: octodns.provider.cloudflare.CloudflareProvider
+    class: octodns_cloudflare.CloudflareProvider
     # email: aaa662ec@opayq.com
     token: env/CLOUDFLARE_TOKEN
 
