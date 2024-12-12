@@ -38,6 +38,11 @@ id:
     values:
       - 138.201.216.36
 
+media:
+  - ttl: 1
+    type: A
+    value: 138.201.216.36
+
 monitoring:
   - ttl: 1
     type: A
