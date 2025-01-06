@@ -55,20 +55,6 @@ donateicecreamto:
   type: A
   value: 192.0.2.1
 
-blog:
-  octodns:
-    cloudflare:
-      proxied: true
-      urlfwd:
-        - path: "/*"
-          target: "https://nicolais.blog/$1"
-          status_code: 301
-          preserve_path_suffix: true
-          preserve_query_string: false
-  ttl: 300
-  type: A
-  value: 192.0.2.1
-
 ghar:
   ttl: 300
   type: CNAME
