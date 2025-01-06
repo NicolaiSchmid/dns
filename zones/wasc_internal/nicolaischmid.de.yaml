@@ -4,11 +4,11 @@ ci1.cis.git:
   value: 5.135.34.97
 
 git:
-  ttl: 1
+  ttl: 300
   type: A
   value: 5.135.34.101
 
 registry:
-  ttl: 1
+  ttl: 300
   type: A
   value: 5.135.34.101

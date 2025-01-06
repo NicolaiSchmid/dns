@@ -17,29 +17,29 @@ cloud:
     value: 5.135.34.99
 
 corona:
-  - ttl: 1
+  - ttl: 300
     type: A
     values:
       - 138.201.216.36
 
 drop:
-  - ttl: 1
+  - ttl: 300
     type: A
     value: 5.135.34.98
 
 gesetze:
-  - ttl: 1
+  - ttl: 300
     type: CNAME
     value: cname.vercel-dns.com.
 
 id:
-  - ttl: 1
+  - ttl: 300
     type: A
     values:
       - 138.201.216.36
 
 monitoring:
-  - ttl: 1
+  - ttl: 300
     type: A
     values:
       - 5.135.34.100
