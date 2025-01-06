@@ -3,11 +3,11 @@
   - octodns:
       cloudflare:
         proxied: true
-    ttl: 1
+    ttl: 300
     type: A
     value: 192.0.2.1
 
-  - ttl: 1
+  - ttl: 300
     type: MX
     values:
       - priority: 10
