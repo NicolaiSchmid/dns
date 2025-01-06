@@ -38,13 +38,59 @@ id:
     values:
       - 138.201.216.36
 
-media:
-  - ttl: 1
-    type: A
-    value: 138.201.216.36
-
 monitoring:
   - ttl: 1
     type: A
     values:
       - 5.135.34.100
+
+bazarr:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+julian:
+  ttl: 300
+  type: CNAME
+  value: ece37d96-c8d6-4dc0-afe5-eb9f0b9fc489.cfargotunnel.com.
+
+nicothek:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+prowlarr:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+radarr:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+readarr:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+sonarr:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+torrent:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+traefik:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+media:
+  - ttl: 1
+    type: A
+    values:
+      - 138.201.216.36

@@ -45,6 +45,50 @@ donateicecreamto:
   octodns:
     cloudflare:
       proxied: true
-  ttl: 60
+      urlfwd:
+        - path: "/"
+          target: "https://paypal.me/nicolaischmid/2"
+          status_code: 301
+          preserve_path_suffix: true
+          preserve_query_string: false
+  ttl: 300
+  type: A
+  value: 192.0.2.1
+
+blog:
+  octodns:
+    cloudflare:
+      proxied: true
+      urlfwd:
+        - path: "/*"
+          target: "https://nicolais.blog/$1"
+          status_code: 301
+          preserve_path_suffix: true
+          preserve_query_string: false
+  ttl: 300
+  type: A
+  value: 192.0.2.1
+
+ghar:
+  ttl: 300
+  type: CNAME
+  value: c2ab83e1-2b39-4c1e-8f37-a6b5f516fc4f.cfargotunnel.com.
+
+ghar2:
+  ttl: 300
+  type: CNAME
+  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
+
+www:
+  octodns:
+    cloudflare:
+      proxied: true
+      urlfwd:
+        - path: "/*"
+          target: "https://nicolaischmid.de/$1"
+          status_code: 301
+          preserve_path_suffix: true
+          preserve_query_string: false
+  ttl: 300
   type: A
   value: 192.0.2.1
