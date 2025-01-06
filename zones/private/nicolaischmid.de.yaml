@@ -17,12 +17,12 @@ accounts:
   value: accounts.clerk.services.
 
 clerk:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: frontend-api.clerk.services.
 
 clk._domainkey:
-  ttl: 1
+  ttl: 300
   type: CNAME
   value: dkim1.3aaz29ko39jp.clerk.services.
 
