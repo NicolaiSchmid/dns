@@ -88,9 +88,3 @@ traefik:
   ttl: 300
   type: CNAME
   value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
-
-media:
-  - ttl: 1
-    type: A
-    values:
-      - 138.201.216.36
