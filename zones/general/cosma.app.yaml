@@ -1,8 +1,0 @@
-# Redirected to nicolaischmid.de
-"":
-  - octodns:
-      cloudflare:
-        proxied: false
-    ttl: 60
-    type: A
-    value: 52.143.57.217

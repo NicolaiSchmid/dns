@@ -50,9 +50,3 @@ zones:
       - general
     targets:
       - cloudflare
-
-  cosma.app.:
-    sources:
-      - general
-    targets:
-      - cloudflare
