@@ -51,3 +51,8 @@ default._domainkey:
   - ttl: 1
     type: TXT
     value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjI8LuZZ61TbY2kIJds0r8iUzQEBCmOrAKAx4Pb6YuiVOwrGWV40qMpr+nrMkUFJVopyTa37bouISIVys9tzH3TUNY3hjyhFsPR/8vawbJHWuD82wMl36vwcL6U3zBsPYPMCvqPNwbrThaaBUTuEHXUJ6T0HQ5hQuMROp3/w7D9QIDAQAB
+
+docs:
+  - ttl: 1
+    type: CNAME
+    value: cname.vercel-dns.com.
