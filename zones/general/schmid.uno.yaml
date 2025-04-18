@@ -42,6 +42,11 @@ _autodiscover._tcp:
     target: autodiscover.zoho.com.
     weight: 0
 
+_vercel:
+  ttl: 1
+  type: TXT
+  value: vc-domain-verify=docs.schmid.uno,0f0f071fd440765dbf43
+
 default._domainkey:
   - ttl: 1
     type: TXT
