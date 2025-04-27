@@ -45,7 +45,7 @@ _autodiscover._tcp:
 _vercel:
   ttl: 1
   type: TXT
-  value: vc-domain-verify=docs.schmid.uno,0f0f071fd440765dbf43
+  value: vc-domain-verify=rechner.schmid.uno,f11929623ec36f3367de
 
 default._domainkey:
   - ttl: 1
@@ -55,4 +55,14 @@ default._domainkey:
 docs:
   - ttl: 1
     type: CNAME
-    value: cname.vercel-dns.com.
+    value: cname.vercel-dns.com
+
+abi:
+  - ttl: 1
+    type: CNAME
+    value: cname.vercel-dns.com
+
+rechner:
+  - ttl: 1
+    type: CNAME
+    value: cname.vercel-dns.com
