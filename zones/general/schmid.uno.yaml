@@ -55,14 +55,14 @@ default._domainkey:
 docs:
   - ttl: 1
     type: CNAME
-    value: cname.vercel-dns.com
+    value: cname.vercel-dns.com.
 
 abi:
   - ttl: 1
     type: CNAME
-    value: cname.vercel-dns.com
+    value: cname.vercel-dns.com.
 
 rechner:
   - ttl: 1
     type: CNAME
-    value: cname.vercel-dns.com
+    value: cname.vercel-dns.com.
