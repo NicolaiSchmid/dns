@@ -2,7 +2,7 @@
 # Full project: https://gitlab.com/pages/plain-html
 variables:
 
-image: registry.nicolaischmid.de/jerzy/dns-tools/image:latest
+image: octodns/octodns:2025.04
 stages:
   - test
   - deploy
@@ -13,7 +13,7 @@ test:
     - octodns-sync --config-file production.yaml
   except:
     - master
-    
+
 deploy:
   stage: deploy
   script:
@@ -22,4 +22,4 @@ deploy:
   environment:
     name: production
   only:
-  - master
+    - master
