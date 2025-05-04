@@ -29,6 +29,11 @@
       - priority: 72
         value: route3.mx.cloudflare.net.
 
+_dmarc:
+  - ttl: 1
+    type: TXT
+    value: 'd=DMARC1\; p=quarantine\; rua=mailto:dmarc@nicolaischmid.de\; ruf=mailto:dmarc@nicolaischmid.de\; pct=100'
+
 elink101.mail:
   - ttl: 1
     type: CNAME
