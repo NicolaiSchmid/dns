@@ -29,6 +29,16 @@
       - priority: 72
         value: route3.mx.cloudflare.net.
 
+elink101.mail:
+  - ttl: 1
+    type: CNAME
+    value: sendgrid.net.
+
+52339102.mail:
+  - ttl: 1
+    type: CNAME
+    value: sendgrid.net.
+
 _ens:
   - ttl: 300
     type: TXT
