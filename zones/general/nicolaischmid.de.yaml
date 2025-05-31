@@ -37,7 +37,7 @@ _dmarc:
 elink101.mail:
   - ttl: 1
     type: CNAME
-    value: sendgrid.net.
+    value: branded-link.beehiiv.com.
 
 52339102.mail:
   - ttl: 1
@@ -48,3 +48,18 @@ _ens:
   - ttl: 300
     type: TXT
     value: a=0x809fF478334CB242037f63b05738Cc183e14b4d2
+
+em4617.mail:
+  - ttl: 1
+    type: CNAME
+    value: u52339102.wl103.sendgrid.net.
+
+a92._domainkey.mail:
+  - ttl: 1
+    type: CNAME
+    value: a92.domainkey.u52339102.wl103.sendgrid.net.
+
+a922._domainkey.mail:
+  - ttl: 1
+    type: CNAME
+    value: a922.domainkey.u52339102.wl103.sendgrid.net.
