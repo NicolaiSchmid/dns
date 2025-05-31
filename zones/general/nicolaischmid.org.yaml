@@ -12,3 +12,8 @@
     values:
       - nicolaischmid.org
       - v=spf1 -all
+
+newsletter:
+  type: CNAME
+  value: cname.beehiiv.com.
+  ttl: 1
