@@ -78,3 +78,8 @@ _vercel:
   - ttl: 1
     type: TXT
     value: vc-domain-verify=wolfgang.nicolaischmid.de,47f7d14b8b1a4c5e99ee
+
+newsletter:
+  type: CNAME
+  value: cname.beehiiv.com.
+  ttl: 1
