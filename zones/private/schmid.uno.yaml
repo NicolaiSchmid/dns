@@ -11,38 +11,16 @@ chris:
       - 151.101.1.195
       - 151.101.65.195
 
-cloud:
-  - ttl: 1
-    type: A
-    value: 5.135.34.99
-
 corona:
   - ttl: 300
     type: A
     values:
       - 138.201.216.36
 
-drop:
-  - ttl: 300
-    type: A
-    value: 5.135.34.98
-
 gesetze:
   - ttl: 300
     type: CNAME
     value: cname.vercel-dns.com.
-
-id:
-  - ttl: 300
-    type: A
-    values:
-      - 138.201.216.36
-
-monitoring:
-  - ttl: 300
-    type: A
-    values:
-      - 5.135.34.100
 
 bazarr:
   octodns:
