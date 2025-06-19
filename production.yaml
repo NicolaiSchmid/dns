@@ -51,7 +51,7 @@ zones:
     targets:
       - cloudflare
 
-  polymath.site.:
+  polymath.page.:
     sources:
       - general
     targets:
