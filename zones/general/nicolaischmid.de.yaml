@@ -37,7 +37,7 @@ _dmarc:
 _dmarc.mail:
   - ttl: 1
     type: TXT
-    value: 'v=DMARC1; p=none; rua=mailto:inbox@nicolaischmid.de'
+    value: 'v=DMARC1\; p=none\; rua=mailto:inbox@nicolaischmid.de'
 
 elink101.mail:
   - ttl: 1
