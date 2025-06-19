@@ -1,0 +1,48 @@
+---
+description: new MDC rules must be created in the .cursor/rules directory as separate files with .mdc extension
+globs: **/*.mdc
+alwaysApply: false
+---
+
+# MDC Rule Location Specification
+
+This rule instructs Cursor IDE to create all new MDC rules in the `.cursor/rules` directory.
+
+## Rule Details
+
+- All new MDC rules must be created as separate files in the `.cursor/rules` directory
+- Each rule file should have a `.mdc` extension
+- Rule files should be named descriptively to indicate their purpose using a dashcase scheme (eg: new-rules.mdc, casing-of-locales.mdc, refactoring-locales.mdc)
+- No nested rule directories are allowed
+- Each rule file must start with a YAML front-matter section containing:
+  ```yaml
+  ---
+  description: A clear, concise description of the rule's purpose
+  globs: Pattern(s) for files this rule applies to (string or array)
+  alwaysApply: Boolean indicating if rule should always be applied
+  ---
+  ```
+
+## Implementation
+
+When creating new MDC rules:
+
+1. Always place them in the `.cursor/rules` directory
+2. Create one rule per file
+3. Use clear, descriptive filenames
+4. Follow the `.mdc` file extension convention
+
+## Examples
+
+✅ Correct:
+
+- `.cursor/rules/formatting.mdc`
+- `.cursor/rules/linting.mdc`
+- `.cursor/rules/documentation.mdc`
+
+❌ Incorrect:
+
+- `rules/formatting.mdc` (wrong location)
+- `.cursor/rules/subfolder/rule.mdc` (no nested directories)
+- `formatting.txt` (wrong extension)
+
