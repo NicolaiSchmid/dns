@@ -68,3 +68,13 @@ a922._domainkey.mail:
   - ttl: 1
     type: CNAME
     value: a922.domainkey.u52339102.wl103.sendgrid.net.
+
+wolfgang:
+  - ttl: 1
+    type: CNAME
+    value: d4da92e663372337.vercel-dns-017c.vercel-dns.com.
+
+_vercel:
+  - ttl: 1
+    type: TXT
+    value: vc-domain-verify=wolfgang.nicolaischmid.de,47f7d14b8b1a4c5e99ee
