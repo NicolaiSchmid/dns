@@ -77,7 +77,7 @@ wolfgang:
 _vercel:
   - ttl: 1
     type: TXT
-    value: vc-domain-verify=wolfgang.nicolaischmid.de,47f7d14b8b1a4c5e99ee
+    value: vc-domain-verify=wolfgang.nicolaischmid.de,040431d106596241cd92
 
 newsletter:
   type: CNAME
