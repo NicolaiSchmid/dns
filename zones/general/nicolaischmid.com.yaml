@@ -1,0 +1,15 @@
+"":
+  - ttl: 1
+    type: A
+    value: 216.198.79.1
+
+
+  - ttl: 1
+    type: TXT
+    values:
+      - v=spf1 -all
+
+www:
+  - ttl: 1
+    type: CNAME
+    value: a0f5bdbb1885838b.vercel-dns-017.com.

@@ -45,6 +45,12 @@ zones:
     targets:
       - cloudflare
 
+  nicolaischmid.com.:
+    sources:
+      - general
+    targets:
+      - cloudflare
+
   mansi-in-berlin.de.:
     sources:
       - general
