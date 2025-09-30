@@ -11,11 +11,7 @@
     type: MX
     values:
       - priority: 10
-        value: mx.zoho.com.
-      - priority: 20
-        value: mx2.zoho.com.
-      - priority: 50
-        value: mx3.zoho.com.
+        value: mail.wasc.me.
 
   - ttl: 1
     type: CAA
@@ -30,7 +26,7 @@
   - ttl: 1
     type: TXT
     values:
-      - v=spf1 mx include:zoho.com -all
+      - v=spf1 mx include:zoho.com include:wasc.me -all
       - google-site-verification=yF98KJ9rNCGNj7kndcDrGg9AGvsxfvpyTxriXWjG99g
 
 _autodiscover._tcp:
@@ -51,6 +47,11 @@ default._domainkey:
   - ttl: 1
     type: TXT
     value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjI8LuZZ61TbY2kIJds0r8iUzQEBCmOrAKAx4Pb6YuiVOwrGWV40qMpr+nrMkUFJVopyTa37bouISIVys9tzH3TUNY3hjyhFsPR/8vawbJHWuD82wMl36vwcL6U3zBsPYPMCvqPNwbrThaaBUTuEHXUJ6T0HQ5hQuMROp3/w7D9QIDAQAB
+
+bob._domainkey:
+  - ttl: 1
+    type: TXT
+    value: v=DKIM1\; t=s\; p=MIIBCgKCAQEAzFWobb5qdkjRiQxGWgQ4MvI/mkqazsQpxjNMOT0gOOMeAYufhlj2ptuhqJqWLSq6s3dGqL4bFQvFDWacJsaH/Vityp8v8xog3ZJJS5w8VGH9On91Nkpl6IWbn/7O/ysC7pP3WaAi3dx+2hzawXolYvMjyzEUWJaCfrU74qxDXPjMN5BokE32+rYjolEn6H8U8g2Jui91YXfsv/pBiAKKJh1G2iwOtMLfADxz5dp2THCkmMlvbxP5GC/FyFysSCrC+I3a1KIwuGQe8YCegy+JsXBOsD/3mq/VTh/vS5GlWXc5jiuCWQfp9AU86INqYDVUNXUV6I5aP/u6VtUZ8a3E6QIDAQAB
 
 docs:
   - ttl: 1
