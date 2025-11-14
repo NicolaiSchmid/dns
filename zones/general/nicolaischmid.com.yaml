@@ -13,3 +13,8 @@ www:
   - ttl: 1
     type: CNAME
     value: a0f5bdbb1885838b.vercel-dns-017.com.
+
+uebersetzer:
+  - ttl: 1
+    type: CNAME
+    value: cname.vercel-dns.com.
