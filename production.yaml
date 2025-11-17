@@ -62,3 +62,9 @@ zones:
       - general
     targets:
       - cloudflare
+
+  noll.to.:
+    sources:
+      - general
+    targets:
+      - cloudflare

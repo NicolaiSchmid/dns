@@ -1,0 +1,30 @@
+"":
+  - ttl: 1
+    type: A
+    value: 216.198.79.1
+    
+clerk:
+  - ttl: 1
+    type: CNAME
+    value: frontend-api.clerk.services.
+
+accounts:
+  - ttl: 1
+    type: CNAME
+    value: accounts.clerk.services.
+
+clkmail:
+  - ttl: 1
+    type: CNAME
+    value: mail.qxsf7i6zdfcc.clerk.services.
+
+clk._domainkey:
+  - ttl: 1
+    type: CNAME
+    value: dkim1.qxsf7i6zdfcc.clerk.services.
+
+clk2._domainkey:
+  - ttl: 1
+    type: CNAME
+    value: dkim2.qxsf7i6zdfcc.clerk.services.
+
