@@ -13,31 +13,6 @@
     type: TXT
     value: google-site-verification=x_ek9lA8a5__n7Qd6HbDRHEPR0D59y1bF6VBQkZl7Rg
 
-clerk:
-  - ttl: 1
-    type: CNAME
-    value: frontend-api.clerk.services.
-
-accounts:
-  - ttl: 1
-    type: CNAME
-    value: accounts.clerk.services.
-
-clkmail:
-  - ttl: 1
-    type: CNAME
-    value: mail.nvhqrp1j45l1.clerk.services.
-
-clk._domainkey:
-  - ttl: 1
-    type: CNAME
-    value: dkim1.nvhqrp1j45l1.clerk.services.
-
-clk2._domainkey:
-  - ttl: 1
-    type: CNAME
-    value: dkim2.nvhqrp1j45l1.clerk.services.
-
 resend._domainkey:
   - ttl: 1
     type: TXT
