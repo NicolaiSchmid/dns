@@ -52,3 +52,8 @@ _dmarc:
   - ttl: 1
     type: TXT
     value: v=DMARC1\; p=none\;
+
+auth:
+  - ttl: 1
+    type: CNAME
+    value: cname.workosdns.com.
