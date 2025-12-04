@@ -18,6 +18,21 @@ www:
     type: TXT
     value: google-site-verification=x_ek9lA8a5__n7Qd6HbDRHEPR0D59y1bF6VBQkZl7Rg
 
+translate:
+  - ttl: 1
+    type: A
+    value: 216.198.79.1
+
+app:
+  - ttl: 1
+    type: A
+    value: 216.198.79.1
+
+secure:
+  - ttl: 1
+    type: A
+    value: 216.198.79.1
+
 resend._domainkey:
   - ttl: 1
     type: TXT
