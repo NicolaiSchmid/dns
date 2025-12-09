@@ -7,7 +7,7 @@
     type: MX
     values:
       - priority: 2
-        value: inbound-smtp.eu-west-1.amazonaws.com.
+        value: smtp.google.com.
 
   - ttl: 1
     type: TXT
