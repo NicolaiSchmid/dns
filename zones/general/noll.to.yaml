@@ -11,7 +11,9 @@
 
   - ttl: 1
     type: TXT
-    value: google-site-verification=x_ek9lA8a5__n7Qd6HbDRHEPR0D59y1bF6VBQkZl7Rg
+    values:
+      - google-site-verification=x_ek9lA8a5__n7Qd6HbDRHEPR0D59y1bF6VBQkZl7Rg
+      - google-site-verification=ZA5mPPlnbUYwSj82wMS9mfC3pAWTSpJ_rOolrjy1Vmk
 
 www:
   - ttl: 1
