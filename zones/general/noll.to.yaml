@@ -14,6 +14,7 @@
     values:
       - google-site-verification=x_ek9lA8a5__n7Qd6HbDRHEPR0D59y1bF6VBQkZl7Rg
       - google-site-verification=ZA5mPPlnbUYwSj82wMS9mfC3pAWTSpJ_rOolrjy1Vmk
+      - lemlist-verif=36149ba9
 
 www:
   - ttl: 1
@@ -59,3 +60,8 @@ auth:
   - ttl: 1
     type: CNAME
     value: cname.workosdns.com.
+
+trail:
+  - ttl: 1
+    type: CNAME
+    value: custom.lemlist.com.
