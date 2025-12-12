@@ -3,7 +3,6 @@
     type: A
     value: 216.198.79.1
 
-
   - ttl: 1
     type: TXT
     values:
@@ -13,33 +12,3 @@ www:
   - ttl: 1
     type: CNAME
     value: a0f5bdbb1885838b.vercel-dns-017.com.
-
-uebersetzer:
-  - ttl: 1
-    type: CNAME
-    value: cname.vercel-dns.com.
-
-clerk.uebersetzer:
-  - ttl: 1
-    type: CNAME
-    value: frontend-api.clerk.services.
-
-accounts.uebersetzer:
-  - ttl: 1
-    type: CNAME
-    value: accounts.clerk.services.
-
-clkmail.uebersetzer:
-  - ttl: 1
-    type: CNAME
-    value: mail.qxsf7i6zdfcc.clerk.services.
-
-clk._domainkey.uebersetzer:
-  - ttl: 1
-    type: CNAME
-    value: dkim1.qxsf7i6zdfcc.clerk.services.
-
-clk2._domainkey.uebersetzer:
-  - ttl: 1
-    type: CNAME
-    value: dkim2.qxsf7i6zdfcc.clerk.services.
