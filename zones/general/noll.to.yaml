@@ -36,6 +36,11 @@ secure:
     type: A
     value: 216.198.79.1
 
+google._domainkey:
+  - ttl: 1
+    type: TXT
+    value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7HPSE1avvqRfoj+slDMcqHhIVKsNVTgLoiYA+79OYmVKcKU9mhfi/lYrN1CYjCgOCcn/sBanktbJdY8tYZiYPqcdnthqXW7b/Tc1zSxXM9GhGeVwXKQLa8S4J09c1oBNBHxsHabBVCWAIRazp/67YEL2YlXppjHqyJlIa61AdCMK13j/e6TqoVXafd4r/OpzTIfzXwyBNZv+Hrxw314sNgSolYAXlq3kKnDX8EJ/R7rVzR6P+r07C8MlZ4hHDkgCKTJWkne0wGFqRzCRA1kyhVzx69EmPYr0wIvmTP8sfcQ/3wqPuQ9pCvXQgtdU+cLUH+t+vyInqNYy21WUN0ekDQIDAQAB
+
 resend._domainkey:
   - ttl: 1
     type: TXT
