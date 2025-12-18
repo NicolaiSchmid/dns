@@ -50,12 +50,12 @@ resend._domainkey:
 pdk1._domainkey.out:
   - ttl: 1
     type: CNAME
-    value: pdk1._domainkey.2b3af.dkim2.eu.mgsend.org.
+    value: pdk1._domainkey.ea521e.dkim2.eu.mgsend.org.
 
 pdk2._domainkey.out:
   - ttl: 1
     type: CNAME
-    value: pdk2._domainkey.2b3af.dkim2.eu.mgsend.org.
+    value: pdk2._domainkey.ea521e.dkim2.eu.mgsend.org.
 
 out:
   - ttl: 1
