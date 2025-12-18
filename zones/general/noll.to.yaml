@@ -61,6 +61,11 @@ out:
   - ttl: 1
     type: TXT
     value: v=spf1 include:mailgun.org ~all
+  - ttl: 1
+    type: MX
+    values:
+      - priority: 10
+        value: smtp.google.com.
 
 email.out:
   - ttl: 1
