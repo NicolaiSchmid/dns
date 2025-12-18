@@ -47,6 +47,22 @@ resend._domainkey:
     type: TXT
     value: p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIyV/GMKk0L/rFei7vPxr9ACht74swxiujpEE6bQ7+3aOqJGWXjP4mBKGkyXc1jGaVXeq940UbYHvMV3bd7WubWBkUWcxWNliR0vzNjtlySmeVFL6zDY9H8S6bCu1F0eT4e8eOCqlasvfk8bDcZNKwnyU8dT6XX8YpkcfU1VrwPwIDAQAB
 
+pdk1._domainkey.out:
+  - ttl: 1
+    type: CNAME
+    value: pdk1._domainkey.2b3af.dkim2.eu.mgsend.org.
+
+pdk2._domainkey.out:
+  - ttl: 1
+    type: CNAME
+    value: pdk2._domainkey.2b3af.dkim2.eu.mgsend.org.
+
+out:
+  - ttl: 1
+    type: TXT
+    value: v=spf1 include:mailgun.org ~all
+
+# resend
 send:
   - ttl: 1
     type: MX
