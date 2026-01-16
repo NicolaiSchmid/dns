@@ -68,3 +68,9 @@ zones:
       - general
     targets:
       - cloudflare
+
+  nicool.ai.:
+    sources:
+      - general
+    targets:
+      - cloudflare
