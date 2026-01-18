@@ -12,6 +12,7 @@
   - ttl: 1
     type: TXT
     values:
+      - google-site-verification=OjMubYEmWTri5whoA_6VYPK-9b6PNp_2mKYzN7mGwsY
       - google-site-verification=x_ek9lA8a5__n7Qd6HbDRHEPR0D59y1bF6VBQkZl7Rg
       - google-site-verification=ZA5mPPlnbUYwSj82wMS9mfC3pAWTSpJ_rOolrjy1Vmk
       - lemlist-verif=36149ba9
