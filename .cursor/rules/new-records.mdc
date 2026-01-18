@@ -1,0 +1,108 @@
+---
+description: workflow for adding or modifying DNS records - switches to master, pulls latest, creates feature branch, makes changes, and commits
+globs: zones/**/*.yaml
+alwaysApply: false
+---
+
+# DNS Record Change Workflow
+
+This rule defines the workflow for adding or modifying DNS records in the repository.
+
+## Workflow Steps
+
+When making changes to DNS records, follow this exact workflow:
+
+### 1. Switch to Master Branch
+```bash
+git checkout master
+```
+
+### 2. Pull Latest Changes
+```bash
+git pull -r origin master
+```
+
+### 3. Create Feature Branch
+Create a new branch following the naming convention:
+```
+<author-handle>/<record-description>
+```
+
+Where:
+- `<author-handle>` is the user's handle/username (e.g., `nicolai`, `nschmid`)
+- `<record-description>` is a short, descriptive name for the change using kebab-case (e.g., `add-mx-records`, `update-a-record-nicool-ai`)
+
+Example:
+```bash
+git checkout -b nicolai/add-cname-record-blog
+```
+
+### 4. Make the Requested Changes
+- Edit the appropriate zone file(s) in `zones/` directory
+- Follow the existing YAML structure and conventions
+- Ensure proper indentation and formatting
+
+### 5. Commit Changes
+Follow the commit convention from `@commit-convention.mdc`:
+
+For DNS record changes, use these conventions:
+- Type: `feat` for new records, `fix` for corrections, `chore` for maintenance
+- Scope: `<zone-name>` where zone-name is the domain (e.g., `nicool.ai`)
+
+Examples:
+```
+feat(nicool.ai): add CNAME record for blog subdomain
+fix(nicolaischmid.de): correct MX record priority
+feat(schmid.uno): add TXT record for domain verification
+chore(polymath.page): update TTL values
+```
+
+## Complete Example
+
+```bash
+# 1. Switch to master
+git checkout master
+
+# 2. Pull latest
+git pull -r origin master
+
+# 3. Create feature branch
+git checkout -b nicolai/add-blog-cname-nicool-ai
+
+# 4. Make changes to zones/general/nicool.ai.yaml
+# ... edit file ...
+
+# 5. Stage and commit
+git add zones/general/nicool.ai.yaml
+git commit -m "feat(dns:nicool.ai): add CNAME record for blog subdomain"
+```
+
+## Zone File Format Reference
+
+DNS records follow this YAML structure:
+
+```yaml
+"subdomain":
+  - ttl: 3600
+    type: A
+    value: 192.0.2.1
+    octodns:
+      cloudflare:
+        proxied: true
+```
+
+Common record types:
+- `A`: IPv4 address
+- `AAAA`: IPv6 address
+- `CNAME`: Canonical name (alias)
+- `MX`: Mail exchange
+- `TXT`: Text record
+- `NS`: Name server
+
+For root domain records, use empty string as key:
+```yaml
+"":
+  - ttl: 1
+    type: A
+    value: 192.0.2.1
+```
