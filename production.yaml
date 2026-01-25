@@ -74,3 +74,9 @@ zones:
       - general
     targets:
       - cloudflare
+
+  gesetz.sh.:
+    sources:
+      - general
+    targets:
+      - cloudflare
