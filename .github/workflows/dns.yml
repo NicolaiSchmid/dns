@@ -1,0 +1,37 @@
+name: DNS Sync
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Dry Run
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    container:
+      image: octodns/octodns:2025.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: OctoDNS Sync (dry run)
+        run: octodns-sync --config-file production.yaml
+        env:
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment: production
+    container:
+      image: octodns/octodns:2025.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: OctoDNS Sync
+        run: octodns-sync --config-file production.yaml --doit
+        env:
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
