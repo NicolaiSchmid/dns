@@ -80,3 +80,9 @@ zones:
       - general
     targets:
       - cloudflare
+
+  pons.chat.:
+    sources:
+      - general
+    targets:
+      - cloudflare
