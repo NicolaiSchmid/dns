@@ -2,3 +2,6 @@
   - ttl: 1
     type: A
     value: 216.150.1.1
+  - ttl: 1
+    type: TXT
+    value: google-site-verification=wsih9eqtFAvP_pjMZt2CXsGY-VYM5S9jMNQ_TYwbbzU
