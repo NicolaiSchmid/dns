@@ -24,4 +24,4 @@ send:
 _dmarc:
   ttl: 1
   type: TXT
-  value: "v=DMARC1\; p=none\;"
+  value: v=DMARC1\; p=none\;
