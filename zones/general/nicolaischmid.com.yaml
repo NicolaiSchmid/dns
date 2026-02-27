@@ -8,16 +8,6 @@
     values:
       - v=spf1 -all
 
-capp:
-  - ttl: 1
-    type: CNAME
-    value: 4c54073c664370ae.vercel-dns-016.com.
-
-drio:
-  - ttl: 1
-    type: CNAME
-    value: cname.vercel-dns.com.
-
 www:
   - ttl: 1
     type: CNAME
