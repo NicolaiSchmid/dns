@@ -6,6 +6,14 @@
       cloudflare:
         proxied: true
 
+  - ttl: 1
+    type: TXT
+    value: facebook-domain-verification=3wdqjsv4vulxgom0qf899krhau4n6n
+
+  - ttl: 1
+    type: TXT
+    value: facebook-domain-verification=z9opr6miqkd1vp0gt4vzyfdvzqosc8
+
 # Resend DKIM
 resend._domainkey:
   - ttl: 1
