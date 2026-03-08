@@ -15,6 +15,7 @@
   - ttl: 1
     type: TXT
     values:
+      - google-site-verification=uhdf70-Srf1T0i6s-GarA7I3ogTIROnz7xYiBIGTzk0
       - facebook-domain-verification=3wdqjsv4vulxgom0qf899krhau4n6n
       - facebook-domain-verification=z9opr6miqkd1vp0gt4vzyfdvzqosc8
 
