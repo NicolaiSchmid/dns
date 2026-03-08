@@ -7,6 +7,12 @@
         proxied: true
 
   - ttl: 1
+    type: MX
+    values:
+      - priority: 10
+        value: inbound-smtp.eu-west-1.amazonaws.com.
+
+  - ttl: 1
     type: TXT
     values:
       - facebook-domain-verification=3wdqjsv4vulxgom0qf899krhau4n6n
