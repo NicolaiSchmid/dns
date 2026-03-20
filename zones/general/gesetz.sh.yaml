@@ -6,3 +6,12 @@
   - ttl: 1
     type: TXT
     value: google-site-verification=fQpZgx6g563GnB5__-XOJVde8muJr_rsDFU5mHNnkHc
+
+  - ttl: 1
+    type: TXT
+    value: drio-challenge=8439619711854ee3bbed99bc8d75b678
+
+ai:
+  - ttl: 1
+    type: CNAME
+    value: cname.getdrio.com
