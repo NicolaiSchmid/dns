@@ -4,7 +4,14 @@
     value: 216.150.1.1
   - ttl: 1
     type: TXT
-    value: google-site-verification=wsih9eqtFAvP_pjMZt2CXsGY-VYM5S9jMNQ_TYwbbzU
+    values:
+      - google-site-verification=wsih9eqtFAvP_pjMZt2CXsGY-VYM5S9jMNQ_TYwbbzU
+      - drio-challenge=3803df5f952547a584fe82dfe37cad22
+
+ai:
+  - ttl: 1
+    type: CNAME
+    value: cname.getdrio.com.
 
 resend._domainkey:
   ttl: 1
