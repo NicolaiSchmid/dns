@@ -12,4 +12,4 @@
 ai:
   - ttl: 1
     type: CNAME
-    value: cname.getdrio.com
+    value: cname.getdrio.com.
