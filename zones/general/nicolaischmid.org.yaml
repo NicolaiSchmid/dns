@@ -25,7 +25,7 @@
     type: URLFWD
     value:
       path: "/*"
-      target: "https://nicolaischmid.de"
+      target: "https://nicolaischmid.com"
       code: 301
       masking: 2
       query: 0
