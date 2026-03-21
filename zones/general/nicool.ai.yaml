@@ -2,9 +2,6 @@
   - ttl: 1
     type: A
     value: 216.150.1.1
-    octodns:
-      cloudflare:
-        proxied: true
 
   - ttl: 1
     type: MX
