@@ -14,16 +14,19 @@
       - v=spf1 -all
 
 "*":
-  octodns:
-    cloudflare:
-      proxied: true
-      urlfwd:
-        - path: "/*"
-          target: "https://nicolaischmid.de/$1"
-          status_code: 301
-          preserve_path_suffix: true
-          preserve_query_string: false
-  ttl: 300
-  type: A
-  value: 192.0.2.1
+  - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 300
+    type: A
+    value: 192.0.2.1
+
+  - ttl: 300
+    type: URLFWD
+    value:
+      path: "/*"
+      target: "https://nicolaischmid.de"
+      code: 301
+      masking: 2
+      query: 0
 
