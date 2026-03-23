@@ -1,7 +1,7 @@
 "":
   - ttl: 1
-    type: ALIAS
-    value: gesetz-sh.nicolai.pages.dev.
+    type: AAAA
+    value: 100::
     octodns:
       cloudflare:
         proxied: true
