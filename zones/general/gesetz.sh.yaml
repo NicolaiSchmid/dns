@@ -1,6 +1,6 @@
 "":
   - ttl: 1
-    type: CNAME
+    type: ALIAS
     value: gesetz-sh.nicolai.pages.dev.
     octodns:
       cloudflare:
