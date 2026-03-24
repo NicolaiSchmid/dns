@@ -6,6 +6,7 @@
   - ttl: 1
     type: TXT
     values:
+      - google-site-verification=cjIJZjpan3jw1W-KC5zvHlZMbT4e2SQEKqLj_mNc8d4
       - v=spf1 -all
 
 www:
