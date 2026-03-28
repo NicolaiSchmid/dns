@@ -6,11 +6,28 @@
       cloudflare:
         proxied: true
 
-  - ttl: 1
+  - ttl: 300
+    octodns:
+      cloudflare:
+        auto-ttl: true
     type: TXT
     values:
+      - v=spf1 include:_spf.mx.cloudflare.net ~all
       - google-site-verification=fQpZgx6g563GnB5__-XOJVde8muJr_rsDFU5mHNnkHc
       - drio-challenge=ed8d841a002e4311bdd99e8eb9e531a2
+
+  - ttl: 300
+    octodns:
+      cloudflare:
+        auto-ttl: true
+    type: MX
+    values:
+      - priority: 9
+        value: route3.mx.cloudflare.net.
+      - priority: 16
+        value: route2.mx.cloudflare.net.
+      - priority: 38
+        value: route1.mx.cloudflare.net.
 
 ai:
   - ttl: 1
@@ -21,3 +38,11 @@ ai:
   - ttl: 1
     type: CNAME
     value: cname.getdrio.com.
+
+cf2024-1._domainkey:
+  - ttl: 300
+    octodns:
+      cloudflare:
+        auto-ttl: true
+    type: TXT
+    value: 'v=DKIM1\; h=sha256\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiweykoi+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+RPJB2ECPsEDTpeiI5ZyUAwJaVX7r6bznU67g7LvFq35yIo4sdlmtZGV+i0H4cpYH9+3JJ78km4KXwaf9xUJCWF6nxeD+qG6Fyruw1Qlbds2r85U9dkNDVAS3gioCvELryh1TxKGiVTkg4wqHTyHfWsp7KD3WQHYJn0RyfJJu6YEmL77zonn7p2SRMvTMP3ZEXibnC9gz3nnhR6wcYL8Q7zXypKTMD58bTixDSJwIDAQAB'
