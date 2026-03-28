@@ -10,9 +10,14 @@
     type: TXT
     values:
       - google-site-verification=fQpZgx6g563GnB5__-XOJVde8muJr_rsDFU5mHNnkHc
-      - drio-challenge=8439619711854ee3bbed99bc8d75b678
+      - drio-challenge=ed8d841a002e4311bdd99e8eb9e531a2
 
 ai:
+  - ttl: 1
+    type: CNAME
+    value: cname.getdrio.com.
+
+"*.ai":
   - ttl: 1
     type: CNAME
     value: cname.getdrio.com.
