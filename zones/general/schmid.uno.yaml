@@ -53,6 +53,11 @@ bob._domainkey:
     type: TXT
     value: v=DKIM1\; t=s\; p=MIIBCgKCAQEAzFWobb5qdkjRiQxGWgQ4MvI/mkqazsQpxjNMOT0gOOMeAYufhlj2ptuhqJqWLSq6s3dGqL4bFQvFDWacJsaH/Vityp8v8xog3ZJJS5w8VGH9On91Nkpl6IWbn/7O/ysC7pP3WaAi3dx+2hzawXolYvMjyzEUWJaCfrU74qxDXPjMN5BokE32+rYjolEn6H8U8g2Jui91YXfsv/pBiAKKJh1G2iwOtMLfADxz5dp2THCkmMlvbxP5GC/FyFysSCrC+I3a1KIwuGQe8YCegy+JsXBOsD/3mq/VTh/vS5GlWXc5jiuCWQfp9AU86INqYDVUNXUV6I5aP/u6VtUZ8a3E6QIDAQAB
 
+_dmarc:
+  ttl: 300
+  type: TXT
+  value: v=DMARC1\; p=quarantine\; rua=mailto:dmarc@schmid.uno\; adkim=r\; aspf=r\; pct=100
+
 docs:
   - ttl: 1
     type: CNAME
