@@ -13,3 +13,11 @@ www:
   - ttl: 1
     type: CNAME
     value: a0f5bdbb1885838b.vercel-dns-017.com.
+
+jamie-api:
+  - ttl: 1
+    type: AAAA
+    value: "100::"
+    octodns:
+      cloudflare:
+        proxied: true
