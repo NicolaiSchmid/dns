@@ -1,0 +1,4 @@
+"":
+  - ttl: 1
+    type: ALIAS
+    value: target.substack-custom-domains.com.
