@@ -86,3 +86,9 @@ zones:
       - general
     targets:
       - cloudflare
+
+  full-attention.com.:
+    sources:
+      - general
+    targets:
+      - cloudflare
