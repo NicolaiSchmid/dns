@@ -1,7 +1,24 @@
 "":
   - octodns:
       cloudflare:
+        proxied: true
+    ttl: 1
+    type: A
+    value: 192.0.2.1
+
+  - ttl: 1
+    type: URLFWD
+    value:
+      path: "/"
+      target: "https://www.full-attention.com"
+      code: 301
+      masking: 2
+      query: 0
+
+www:
+  - octodns:
+      cloudflare:
         proxied: false
     ttl: 1
-    type: ALIAS
+    type: CNAME
     value: target.substack-custom-domains.com.
