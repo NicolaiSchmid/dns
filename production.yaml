@@ -57,12 +57,6 @@ zones:
     targets:
       - cloudflare
 
-  polymath.page.:
-    sources:
-      - general
-    targets:
-      - cloudflare
-
   nicool.ai.:
     sources:
       - general
