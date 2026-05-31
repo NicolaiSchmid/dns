@@ -1,4 +1,7 @@
 "":
-  - ttl: 1
+  - octodns:
+      cloudflare:
+        proxied: false
+    ttl: 1
     type: ALIAS
     value: target.substack-custom-domains.com.
