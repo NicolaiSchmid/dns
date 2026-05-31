@@ -9,8 +9,8 @@
   - ttl: 1
     type: URLFWD
     value:
-      path: "/"
-      target: "https://www.full-attention.com"
+      path: "/*"
+      target: "https://www.full-attention.com/$1"
       code: 301
       masking: 2
       query: 0
