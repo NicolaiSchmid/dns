@@ -20,6 +20,7 @@ providers:
     class: octodns_cloudflare.CloudflareProvider
     # email: aaa662ec@opayq.com
     token: env/CLOUDFLARE_TOKEN  # Set CLOUDFLARE_TOKEN in GitHub secrets
+    zones_per_page: 10
     update_pcent_threshold: .6
     delete_pcent_threshold: .6
 
