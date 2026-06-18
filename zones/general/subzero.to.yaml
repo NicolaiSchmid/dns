@@ -1,0 +1,9 @@
+"":
+  - ttl: 1
+    type: ALIAS
+    value: 241431276752c5c4.vercel-dns-016.com.
+
+www:
+  - ttl: 1
+    type: CNAME
+    value: 241431276752c5c4.vercel-dns-016.com.
