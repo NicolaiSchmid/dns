@@ -7,3 +7,8 @@ www:
   - ttl: 1
     type: CNAME
     value: 241431276752c5c4.vercel-dns-016.com.
+
+auth:
+  - ttl: 1
+    type: CNAME
+    value: cname.workos-dns.com.
