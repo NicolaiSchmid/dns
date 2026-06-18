@@ -26,3 +26,11 @@ jamie-api:
     octodns:
       cloudflare:
         proxied: true
+
+serialsales:
+  - ttl: 1
+    type: AAAA
+    value: "100::"
+    octodns:
+      cloudflare:
+        proxied: true
