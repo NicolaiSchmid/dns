@@ -19,6 +19,11 @@ secfix:
     type: CNAME
     value: 354a5fbc05cb98ec.vercel-dns-016.com.
 
+mosaic:
+  - ttl: 1
+    type: CNAME
+    value: 398810f91b3b40f1.vercel-dns-016.com.
+
 jamie-api:
   - ttl: 1
     type: AAAA
