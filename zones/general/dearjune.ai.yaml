@@ -1,0 +1,9 @@
+"":
+  - ttl: 1
+    type: A
+    value: 216.150.1.1
+
+www:
+  - ttl: 1
+    type: CNAME
+    value: f7742e391ac50f0a.vercel-dns-016.com.

@@ -63,6 +63,12 @@ zones:
     targets:
       - cloudflare
 
+  dearjune.ai.:
+    sources:
+      - general
+    targets:
+      - cloudflare
+
   gesetz.sh.:
     sources:
       - general
