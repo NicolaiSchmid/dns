@@ -1,7 +1,19 @@
 "":
-  - ttl: 1
+  - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 1
     type: A
-    value: 216.150.1.1
+    value: 192.0.2.1
+
+  - ttl: 1
+    type: URLFWD
+    value:
+      path: "/*"
+      target: "https://www.dearjune.ai/?from=nicool.ai"
+      code: 301
+      masking: 2
+      query: 0
 
   - ttl: 1
     type: MX
