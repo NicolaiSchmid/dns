@@ -40,6 +40,11 @@ _dmarc.sign:
     type: TXT
     value: v=DMARC1\; p=quarantine\; adkim=s\; aspf=s
 
+mail._domainkey.sign:
+  - ttl: 1
+    type: TXT
+    value: v=DKIM1\; h=sha256\; k=rsa\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5BgSqlx9nBDSHtfwbwxCP4rIvIA1uUzVCeqMjaOS3y4bhQLcJHdJ7qoCp/Juc03p/4NYeUZjHLy0a3KSNHwGwZIafxL50aq19y+yrcL1J3KDRyCUrvHt4gHJ2eLjbPwiNX8oJ9aBFWVJ/L3Ypl5jwHEVTptgHWUP1j+vq4LMKaYSyCrRZTUakFRek/Pq/V4zQJJLqHldtrtuEpKhNO7bYTNpPDU+uQm0xpeL1uM250Q95jh3AVhc4iKjVT0hM0foDnw4zOpqxFaZuu5OH7xBTADLdaNMlkdAFcC8qUF/PX0lMFLd1yAJJmMFNMX9KCssX8Zls0p98qBPW0ZijED17wIDAQAB
+
 jamie-api:
   - ttl: 1
     type: AAAA
