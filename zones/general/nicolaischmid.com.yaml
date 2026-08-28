@@ -33,7 +33,10 @@ sign:
         proxied: false
   - ttl: 1
     type: TXT
-    value: v=spf1 ip4:95.217.195.71 -all
+    values:
+      # Google Postmaster
+      - google-site-verification=eueKUZFWB7KOHC6WQKDrYkKwl8hLszYf9DivWngQJqA
+      - v=spf1 ip4:95.217.195.71 -all
 
 _dmarc.sign:
   - ttl: 1
