@@ -38,6 +38,14 @@ sign:
       - google-site-verification=eueKUZFWB7KOHC6WQKDrYkKwl8hLszYf9DivWngQJqA
       - v=spf1 ip4:95.217.195.71 -all
 
+photos:
+  - ttl: 1
+    type: A
+    value: 95.217.195.71
+    octodns:
+      cloudflare:
+        proxied: false
+
 _dmarc.sign:
   - ttl: 1
     type: TXT
