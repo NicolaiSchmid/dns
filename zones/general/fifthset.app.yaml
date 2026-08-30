@@ -37,3 +37,23 @@ auth:
   - ttl: 1
     type: CNAME
     value: cname.workos-dns.com.
+
+resend._domainkey:
+  ttl: 1
+  type: TXT
+  value: "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyfkvHbzkueKkBbjKWILcrholcUgfUA5D/GGCcCzYbluzi7H4WRMPft/OiVWzzu20zoLO6T+sR7hMdWxtPnBUkHz/nrXJErCVnR2zgX20gz9GJBtQW3vlDX152e8uKT2ynZWD7/wlLMa9iaVMKEtpGVz4ZWqfPzcioZZ9Lyv7ZwQIDAQAB"
+
+send:
+  - ttl: 1
+    type: MX
+    value:
+      priority: 10
+      value: feedback-smtp.eu-west-1.amazonses.com.
+  - ttl: 1
+    type: TXT
+    value: "v=spf1 include:amazonses.com ~all"
+
+_dmarc:
+  ttl: 1
+  type: TXT
+  value: v=DMARC1\; p=none\;
