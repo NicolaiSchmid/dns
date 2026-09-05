@@ -34,7 +34,10 @@ cf-bounce:
       - exchange: route3.mx.cloudflare.net.
         preference: 50
 
-  - ttl: 1
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
     type: TXT
     value: v=spf1 include:_spf.mx.cloudflare.net ~all
 
