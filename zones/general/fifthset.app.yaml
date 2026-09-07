@@ -18,7 +18,9 @@
 
   - ttl: 1
     type: TXT
-    value: v=spf1 include:_spf.mx.cloudflare.net ~all
+    values:
+      - v=spf1 include:_spf.mx.cloudflare.net ~all
+      - google-site-verification=Jd-IyzC2MxeaB9gHOycccYXp5RaNpTyeHjglEQ7ka00
 
 cf-bounce:
   - octodns:
