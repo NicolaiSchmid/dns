@@ -3,6 +3,12 @@
     type: A
     value: 216.150.1.1
 
+  - ttl: 1
+    type: TXT
+    values:
+      # Google Search Console site verification
+      - google-site-verification=4zWlXUCiFkkbvQ7owFfyX5Sm7I2JmSxbm1I28qLfqps
+
 www:
   - ttl: 1
     type: CNAME
