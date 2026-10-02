@@ -45,6 +45,11 @@ mosaic:
     type: CNAME
     value: 398810f91b3b40f1.vercel-dns-016.com.
 
+steno:
+  - ttl: 1
+    type: CNAME
+    value: d090583eb5e53d8a.vercel-dns-016.com.
+
 sign:
   - ttl: 1
     type: A
