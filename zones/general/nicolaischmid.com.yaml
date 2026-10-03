@@ -50,6 +50,11 @@ steno:
     type: CNAME
     value: d090583eb5e53d8a.vercel-dns-016.com.
 
+modus:
+  - ttl: 1
+    type: CNAME
+    value: 5a586bcb3362fc49.vercel-dns-016.com.
+
 sign:
   - ttl: 1
     type: A
