@@ -98,3 +98,9 @@ zones:
       - general
     targets:
       - cloudflare
+
+  modusservice.com.:
+    sources:
+      - general
+    targets:
+      - cloudflare
