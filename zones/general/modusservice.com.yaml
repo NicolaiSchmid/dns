@@ -3,10 +3,19 @@
     type: ALIAS
     value: 5a586bcb3362fc49.vercel-dns-016.com.
 
-  # Google Workspace
   - ttl: 1
     type: TXT
-    value: google-site-verification=D1_M9YB7KjVcZ_IkqfDqkySrcuKPptNOtIerfvdsEuo
+    values:
+      # Google Workspace
+      - google-site-verification=D1_M9YB7KjVcZ_IkqfDqkySrcuKPptNOtIerfvdsEuo
+      - v=spf1 include:_spf.google.com ~all
+
+  # Google Workspace
+  - ttl: 60
+    type: MX
+    value:
+      exchange: smtp.google.com.
+      preference: 1
 
 www:
   - ttl: 1
