@@ -17,6 +17,12 @@
       exchange: smtp.google.com.
       preference: 1
 
+# Google Workspace DKIM
+google._domainkey:
+  - ttl: 1
+    type: TXT
+    value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvYaDzgn9AV2wUSjLx6MTssQAcW6x2Tsla6fj/7K3FUdHihLimE2qLn+OltDWs7wW+AoEpaui0WGZx6nRVRIzOK+6UCLZrzU25gMt1wQTVFfO8xOsGdBSVUewMwjdDUyc60Ma0klgnHtfw8/PF6U+jDB1LfzTr0QgyUSjBvsGN+Q8JZ9jC6joMIq2lfvfTRjapPVfbuWBVs5w2zV4TUgsRm8PEN0yCkoKyL46q5/dF7kMM7uGl4mdjYClDvgOY7Ym6FxD9pV+CK49604LYEVG2t4pLrr2mihc48w9cqDn+pwm7Rxsf3/W483OQbTWr3WXOXS/IuvhoKMMhKGMVgeb2wIDAQAB
+
 www:
   - ttl: 1
     type: CNAME
