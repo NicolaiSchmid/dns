@@ -11,18 +11,12 @@
       - google-site-verification=11RgQLmtkBfcYZwmME1KsRd22sdrmvnjvqrAnLrzJJI
       - v=spf1 include:_spf.mx.cloudflare.net ~all
 
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-    ttl: 300
+  # Google Workspace
+  - ttl: 60
     type: MX
-    values:
-      - exchange: route1.mx.cloudflare.net.
-        preference: 31
-      - exchange: route2.mx.cloudflare.net.
-        preference: 100
-      - exchange: route3.mx.cloudflare.net.
-        preference: 65
+    value:
+      exchange: smtp.google.com.
+      preference: 1
 
 cf2024-1._domainkey:
   - octodns:
