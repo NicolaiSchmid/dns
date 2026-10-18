@@ -3,6 +3,11 @@
     type: ALIAS
     value: 5a586bcb3362fc49.vercel-dns-016.com.
 
+  # Google Workspace
+  - ttl: 1
+    type: TXT
+    value: google-site-verification=D1_M9YB7KjVcZ_IkqfDqkySrcuKPptNOtIerfvdsEuo
+
 www:
   - ttl: 1
     type: CNAME
