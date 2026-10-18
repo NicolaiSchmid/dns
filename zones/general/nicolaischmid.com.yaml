@@ -7,6 +7,8 @@
     type: TXT
     values:
       - google-site-verification=cjIJZjpan3jw1W-KC5zvHlZMbT4e2SQEKqLj_mNc8d4
+      # Google Workspace
+      - google-site-verification=11RgQLmtkBfcYZwmME1KsRd22sdrmvnjvqrAnLrzJJI
       - v=spf1 include:_spf.mx.cloudflare.net ~all
 
   - octodns:
@@ -64,6 +66,12 @@ ilovegrain:
   - ttl: 1
     type: CNAME
     value: af87c8888eea0089.vercel-dns-016.com.
+
+# Google Workspace domain verification
+mz6hrtiyblo3:
+  - ttl: 1
+    type: CNAME
+    value: gv-jmeejhuj4h26oo.dv.googlehosted.com.
 
 sign:
   - ttl: 1
