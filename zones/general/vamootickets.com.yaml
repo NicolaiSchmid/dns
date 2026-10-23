@@ -24,6 +24,12 @@
     type: TXT
     value: v=spf1 include:_spf.mx.cloudflare.net ~all
 
+# Resend DMARC
+_dmarc:
+  - ttl: 1
+    type: TXT
+    value: v=DMARC1\; p=none\;
+
 # Cloudflare Email Routing DKIM
 cf2024-1._domainkey:
   - octodns:
@@ -32,6 +38,23 @@ cf2024-1._domainkey:
     ttl: 300
     type: TXT
     value: v=DKIM1\; h=sha256\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiweykoi+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+RPJB2ECPsEDTpeiI5ZyUAwJaVX7r6bznU67g7LvFq35yIo4sdlmtZGV+i0H4cpYH9+3JJ78km4KXwaf9xUJCWF6nxeD+qG6Fyruw1Qlbds2r85U9dkNDVAS3gioCvELryh1TxKGiVTkg4wqHTyHfWsp7KD3WQHYJn0RyfJJu6YEmL77zonn7p2SRMvTMP3ZEXibnC9gz3nnhR6wcYL8Q7zXypKTMD58bTixDSJwIDAQAB
+
+# Resend DKIM
+resend._domainkey:
+  - ttl: 1
+    type: TXT
+    value: p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbjhtfDsoJTVhc85HxvF/1hZI27JFVgR4KxVIQdUh2hYMA5FWKDSlRbDCpVsJG5JU0dPBXDLw9VzV9kxw3SElCwzOlIyd91vfW/CtLQLexAVMeb9pPdJja3abhgb+B7PFzRgC+t8UdmLZ9EJ6tXf3OxycJawwHPrK1nKhrD3+TFwIDAQAB
+
+# Resend SPF
+rsend:
+  - ttl: 1
+    type: CNAME
+    value: rsend-euw1.forge.rmta.net.
+
+send:
+  - ttl: 1
+    type: CNAME
+    value: send.forge.rmta.net.
 
 www:
   - ttl: 1
