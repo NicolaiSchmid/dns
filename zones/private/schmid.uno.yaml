@@ -22,14 +22,6 @@ gesetze:
     type: CNAME
     value: cname.vercel-dns.com.
 
-bazarr:
-  octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: CNAME
-  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
-
 julian:
   octodns:
     cloudflare:
@@ -46,50 +38,3 @@ nicothek:
   type: CNAME
   value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
 
-prowlarr:
-  octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: CNAME
-  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
-
-radarr:
-  octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: CNAME
-  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
-
-readarr:
-  octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: CNAME
-  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
-
-sonarr:
-  octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: CNAME
-  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
-
-torrent:
-  octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: CNAME
-  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
-
-traefik:
-  octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: CNAME
-  value: 17835b41-0e59-40f9-bff2-2f2c2ae78992.cfargotunnel.com.
