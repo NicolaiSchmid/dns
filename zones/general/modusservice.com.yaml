@@ -25,6 +25,14 @@ _dmarc:
     type: TXT
     value: v=DMARC1\; p=none\;
 
+# Resend inbound (agents.modusservice.com)
+agents:
+  - ttl: 1
+    type: MX
+    value:
+      exchange: receive-euw1.forge.rmta.net.
+      preference: 10
+
 # Google Workspace DKIM
 google._domainkey:
   - ttl: 1
