@@ -19,11 +19,34 @@
       exchange: smtp.google.com.
       preference: 1
 
+# Resend DMARC
+_dmarc:
+  - ttl: 1
+    type: TXT
+    value: v=DMARC1\; p=none\;
+
 # Google Workspace DKIM
 google._domainkey:
   - ttl: 1
     type: TXT
     value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1spWg/pCRKkWNjdVy6kNMYt7tDCvgXPrd26gucmcxh11lPF8ftp+Sos+rMmRw4j1pC3jb7jbBwKWLoJGTrdjcTg14+q4/mQxc+ji0qPsi1QTiGUretbK7l++v6r5flqmRdE8vI3AJA4i+K5oO7tB/Xto1xthT/A0gJQcXvwcLPnkZJpjTc4F6rE8PL0e8gC8GJSic35MqvgSKN39exHfFjuCL2Y+LR4h4wYmXFqcTsQh0LXziVvjNmy+MPNPxUqxRAKClKh3h5x2iORRQePjuoSOYKjvKTU+nb6/yOtFELmZog3e8mvNSvnJrJa+QAygUKmvUrrXgfIw4p5UXGTyIQIDAQAB
+
+# Resend DKIM (agents.modusservice.com)
+resend._domainkey.agents:
+  - ttl: 1
+    type: TXT
+    value: p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJuIcl8vLT9emV/SWSB3RF0s9Jvnc+WGL4DIqODxMSYQEehcwz+xb98EcQzhQfZsM0O5Ta2yBuAdfaPpQcF9oKd1YURLmW80LedkW25IwNWgWNLubjWu46Tz9uVyk2x4ogSAXErcaV6WlM3eXgPioh8FcW6V/m0bdKYPoLWom3pwIDAQAB
+
+# Resend SPF (agents.modusservice.com)
+rsend.agents:
+  - ttl: 1
+    type: CNAME
+    value: rsend-euw1.forge.rmta.net.
+
+send.agents:
+  - ttl: 1
+    type: CNAME
+    value: send.forge.rmta.net.
 
 www:
   - ttl: 1
