@@ -8,6 +8,8 @@
     values:
       # Google Workspace
       - google-site-verification=D1_M9YB7KjVcZ_IkqfDqkySrcuKPptNOtIerfvdsEuo
+      # Google Search Console
+      - google-site-verification=nT6KsNk-SnejUYmWaenkZXKNba0buRnMUd9E023YGf8
       - v=spf1 include:_spf.google.com ~all
 
   # Google Workspace
