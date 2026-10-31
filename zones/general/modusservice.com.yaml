@@ -19,6 +19,23 @@
       exchange: smtp.google.com.
       preference: 1
 
+# Self-hosted Convex deployments on the Hetzner host black
+# (<name>.convex and <name>-site.convex). DNS-only: Traefik on black
+# terminates TLS (Let's Encrypt HTTP-01 per host) and serves the websockets.
+"*.convex":
+  - ttl: 1
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 1
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
 # Resend DMARC
 _dmarc:
   - ttl: 1
