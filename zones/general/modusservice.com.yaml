@@ -231,3 +231,55 @@ www:
   - ttl: 1
     type: CNAME
     value: 5a586bcb3362fc49.vercel-dns-016.com.
+
+# Gateway inference and routing control plane go directly to black.
+inference:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+inference-dev:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+routes:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+# Dashboard goes directly to the modus-gateway Vercel project.
+gateway:
+  - ttl: 120
+    type: CNAME
+    value: f183deb1d49f2639.vercel-dns-016.com.
+    octodns:
+      cloudflare:
+        proxied: false
