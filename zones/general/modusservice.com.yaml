@@ -43,13 +43,13 @@ google._domainkey:
 # hostname (<name>.convex and <name>-site.convex). DNS-only: Traefik on black
 # terminates TLS (Let's Encrypt HTTP-01 per host) and serves the websockets.
 june-dev-site.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -57,13 +57,13 @@ june-dev-site.convex:
         proxied: false
 
 june-dev.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -71,13 +71,13 @@ june-dev.convex:
         proxied: false
 
 june-prod-site.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -85,13 +85,13 @@ june-prod-site.convex:
         proxied: false
 
 june-prod.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -99,13 +99,13 @@ june-prod.convex:
         proxied: false
 
 modus-dev-site.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -113,13 +113,13 @@ modus-dev-site.convex:
         proxied: false
 
 modus-dev.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -127,13 +127,13 @@ modus-dev.convex:
         proxied: false
 
 modus-gateway-dev-site.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -141,13 +141,13 @@ modus-gateway-dev-site.convex:
         proxied: false
 
 modus-gateway-dev.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -155,13 +155,13 @@ modus-gateway-dev.convex:
         proxied: false
 
 modus-gateway-prod-site.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -169,13 +169,13 @@ modus-gateway-prod-site.convex:
         proxied: false
 
 modus-gateway-prod.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -183,13 +183,13 @@ modus-gateway-prod.convex:
         proxied: false
 
 modus-prod-site.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
@@ -197,13 +197,13 @@ modus-prod-site.convex:
         proxied: false
 
 modus-prod.convex:
-  - ttl: 1
+  - ttl: 120
     type: A
     value: 65.109.71.108
     octodns:
       cloudflare:
         proxied: false
-  - ttl: 1
+  - ttl: 120
     type: AAAA
     value: 2a01:4f9:3051:4d41::2
     octodns:
