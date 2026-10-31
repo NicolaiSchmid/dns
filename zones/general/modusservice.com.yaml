@@ -19,23 +19,6 @@
       exchange: smtp.google.com.
       preference: 1
 
-# Self-hosted Convex deployments on the Hetzner host black
-# (<name>.convex and <name>-site.convex). DNS-only: Traefik on black
-# terminates TLS (Let's Encrypt HTTP-01 per host) and serves the websockets.
-"*.convex":
-  - ttl: 1
-    type: A
-    value: 65.109.71.108
-    octodns:
-      cloudflare:
-        proxied: false
-  - ttl: 1
-    type: AAAA
-    value: 2a01:4f9:3051:4d41::2
-    octodns:
-      cloudflare:
-        proxied: false
-
 # Resend DMARC
 _dmarc:
   - ttl: 1
@@ -55,6 +38,65 @@ google._domainkey:
   - ttl: 1
     type: TXT
     value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1spWg/pCRKkWNjdVy6kNMYt7tDCvgXPrd26gucmcxh11lPF8ftp+Sos+rMmRw4j1pC3jb7jbBwKWLoJGTrdjcTg14+q4/mQxc+ji0qPsi1QTiGUretbK7l++v6r5flqmRdE8vI3AJA4i+K5oO7tB/Xto1xthT/A0gJQcXvwcLPnkZJpjTc4F6rE8PL0e8gC8GJSic35MqvgSKN39exHfFjuCL2Y+LR4h4wYmXFqcTsQh0LXziVvjNmy+MPNPxUqxRAKClKh3h5x2iORRQePjuoSOYKjvKTU+nb6/yOtFELmZog3e8mvNSvnJrJa+QAygUKmvUrrXgfIw4p5UXGTyIQIDAQAB
+
+# Self-hosted Convex deployments on the Hetzner host black, one record per
+# hostname (<name>.convex and <name>-site.convex). DNS-only: Traefik on black
+# terminates TLS (Let's Encrypt HTTP-01 per host) and serves the websockets.
+june-dev-site.convex:
+  - ttl: 1
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 1
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+june-dev.convex:
+  - ttl: 1
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 1
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+june-prod-site.convex:
+  - ttl: 1
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 1
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+june-prod.convex:
+  - ttl: 1
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 1
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
 
 # Resend DKIM (agents.modusservice.com)
 resend._domainkey.agents:
