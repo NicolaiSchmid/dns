@@ -110,3 +110,9 @@ zones:
       - general
     targets:
       - cloudflare
+
+  vamoo.eu.:
+    sources:
+      - general
+    targets:
+      - cloudflare
