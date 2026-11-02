@@ -283,3 +283,60 @@ gateway:
     octodns:
       cloudflare:
         proxied: false
+
+# Gateway API/WebSocket and HTTP action aliases; explicit HTTP-01 hosts.
+gateway.convex:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+gateway-http.convex:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+gateway-dev.convex:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+gateway-dev-http.convex:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
