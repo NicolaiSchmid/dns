@@ -33,7 +33,17 @@ def main():
             base, head = event['before'], event['after']
         else:
             raise ValueError('Unsupported event')
-        files = subprocess.check_output(['git', 'diff', '--name-only', base, head], text=True).splitlines()
+        workspace = os.environ['GITHUB_WORKSPACE']
+        git = ['git', '-c', 'safe.directory=' + workspace, '-C', workspace]
+        subprocess.run([*git, 'rev-parse', '--show-toplevel'], check=True)
+        for ref in [base, head]:
+            if not re.fullmatch(r'[0-9a-f]{40}', ref):
+                raise ValueError('Invalid event commit')
+            present = subprocess.run([*git, 'cat-file', '-e', ref + '^{commit}'], capture_output=True)
+            if present.returncode:
+                subprocess.run([*git, 'fetch', '--no-tags', 'origin', ref], check=True)
+                subprocess.run([*git, 'cat-file', '-e', ref + '^{commit}'], check=True)
+        files = subprocess.check_output([*git, 'diff', '--name-only', base, head, '--'], text=True).splitlines()
         zones = changed_zones(files)
         if not zones:
             print('No zone changes; nothing to synchronize')
