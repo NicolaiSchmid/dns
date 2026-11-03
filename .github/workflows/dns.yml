@@ -18,8 +18,12 @@ jobs:
       image: octodns/octodns:2025.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Test zone selection
+        run: python3 scripts/sync-changed-zones.test.py
       - name: OctoDNS Sync (dry run)
-        run: octodns-sync --config-file production.yaml
+        run: python3 scripts/sync-changed-zones.py
         env:
           CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
 
@@ -32,7 +36,11 @@ jobs:
       image: octodns/octodns:2025.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Test zone selection
+        run: python3 scripts/sync-changed-zones.test.py
       - name: OctoDNS Sync
-        run: octodns-sync --config-file production.yaml --doit
+        run: python3 scripts/sync-changed-zones.py --doit
         env:
           CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
