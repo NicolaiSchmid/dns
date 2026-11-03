@@ -340,3 +340,32 @@ gateway-dev-http.convex:
     octodns:
       cloudflare:
         proxied: false
+
+# June production target aliases; DNS-only for individual HTTP-01 certificates.
+june.convex:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
+
+june-http.convex:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
