@@ -1,0 +1,24 @@
+# June web app: Vercel rank-one target verified for project june, team wasc.
+www:
+  - ttl: 120
+    type: CNAME
+    value: f7742e391ac50f0a.vercel-dns-016.com.
+    octodns:
+      cloudflare:
+        proxied: false
+
+# June HTTP actions on black; same ingress as june-http.convex.modusservice.com.
+# Parent route manifest maps this host to june-prod, origin site (not SDK/cloud).
+apis:
+  - ttl: 120
+    type: A
+    value: 65.109.71.108
+    octodns:
+      cloudflare:
+        proxied: false
+  - ttl: 120
+    type: AAAA
+    value: 2a01:4f9:3051:4d41::2
+    octodns:
+      cloudflare:
+        proxied: false
