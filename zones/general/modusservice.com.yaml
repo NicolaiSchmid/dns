@@ -17,12 +17,9 @@
   # Google Workspace
   - ttl: 60
     type: MX
-    values:
-      - exchange: smtp.google.com.
-        preference: 1
-      # Microsoft domain verification
-      - exchange: ms80200872.msv1.invalid.
-        preference: 32767
+    value:
+      exchange: smtp.google.com.
+      preference: 1
 
 # Resend DMARC
 _dmarc:
