@@ -6,6 +6,8 @@
   - ttl: 1
     type: TXT
     values:
+      # Microsoft domain verification
+      - MS=ms80200872
       # Google Workspace
       - google-site-verification=D1_M9YB7KjVcZ_IkqfDqkySrcuKPptNOtIerfvdsEuo
       # Google Search Console
