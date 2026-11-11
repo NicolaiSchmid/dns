@@ -173,6 +173,23 @@ send.agents:
     type: CNAME
     value: send.forge.rmta.net.
 
+# Resend DKIM (modusservice.com)
+resend._domainkey:
+  - ttl: 1
+    type: TXT
+    value: p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDfqA+VTJAuF2kzIuNSpJElgdCVXtw+00qUf6VvRJWuUOc5ZDwIylAnVUnmptvtqZ9fGwVLKRxVtaUhq6KDtsZtRtftfMaUb/uII+LiOjan7v208r0aeYcyB9dJIJxu5cGAVzDx6Sw55ACzR6b+Ok1SIBR12H04tg3musoiuSvB8wIDAQAB
+
+# Resend SPF (modusservice.com)
+rsend:
+  - ttl: 1
+    type: CNAME
+    value: rsend-euw1.forge.rmta.net.
+
+send:
+  - ttl: 1
+    type: CNAME
+    value: send.forge.rmta.net.
+
 www:
   - ttl: 1
     type: CNAME
