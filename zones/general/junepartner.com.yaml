@@ -22,3 +22,26 @@ apis:
     octodns:
       cloudflare:
         proxied: false
+
+# Resend DMARC (junepartner.com)
+_dmarc:
+  - ttl: 1
+    type: TXT
+    value: 'v=DMARC1\; p=none\;'
+
+# Resend DKIM (junepartner.com)
+resend._domainkey:
+  - ttl: 1
+    type: TXT
+    value: p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzMLEkFtsgjsgddhZfs5MWTsqWY9u82FZO3Ola2vcfZhxs4/crhHSUiBAQtDw5alDV6Rckb49dY5tputEnpJrcTpMnON6VJ1aVuCoAbLo5h/LLrLkQa341ujxUm35dgCvnxupkQjJLKI59Okc8y7BZVvoME39jP7My91MI2qXrBQIDAQAB
+
+# Resend SPF (junepartner.com)
+rsend:
+  - ttl: 1
+    type: CNAME
+    value: rsend-euw1.forge.rmta.net.
+
+send:
+  - ttl: 1
+    type: CNAME
+    value: send.forge.rmta.net.
