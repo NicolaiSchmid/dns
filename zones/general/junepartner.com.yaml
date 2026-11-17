@@ -1,4 +1,12 @@
 # June web app: Vercel rank-one target verified for project june, team wasc.
+'':
+  - ttl: 120
+    type: CNAME
+    value: f7742e391ac50f0a.vercel-dns-016.com.
+    octodns:
+      cloudflare:
+        proxied: false
+
 www:
   - ttl: 120
     type: CNAME
