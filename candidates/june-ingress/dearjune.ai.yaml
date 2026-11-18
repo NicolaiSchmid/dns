@@ -1,0 +1,27 @@
+# INACTIVE CANDIDATE: not an OctoDNS source. See README.md before promotion.
+"":
+  - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 1
+    type: A
+    value: 216.150.1.1
+
+  - ttl: 1
+    type: TXT
+    values:
+      # Google Search Console site verification
+      - google-site-verification=4zWlXUCiFkkbvQ7owFfyX5Sm7I2JmSxbm1I28qLfqps
+
+www:
+  - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 1
+    type: CNAME
+    value: f7742e391ac50f0a.vercel-dns-016.com.
+
+auth:
+  - ttl: 1
+    type: CNAME
+    value: cname.workos-dns.com.
